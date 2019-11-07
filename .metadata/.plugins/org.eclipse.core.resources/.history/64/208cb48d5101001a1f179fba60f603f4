@@ -1,0 +1,50 @@
+/*
+ * interrupt_handler.c
+ *
+ *  Created on: 31 Oct 2019
+ *      Author: s1758499
+ */
+#include "xil_types.h"
+
+u16 interruptCounter = 0;
+extern int interruptServiced;
+extern int state;
+
+extern u16 colour_0;
+extern u16 colour_1;
+extern u16 colour_2;
+
+extern u16 colour_6;
+extern u16 colour_7;
+extern u16 colour_8;
+
+void hwTimerISR(void *CallbackRef)
+{
+	interruptServiced = FALSE;
+
+	interruptCounter++;
+
+	if (interruptCounter == 500)
+	{
+		state = (state + 1) % 4;
+		interruptCounter = 0;
+		decodeColours();
+	}
+
+	interruptServiced = TRUE;
+}
+
+void decodeColours()
+{
+	switch (state)
+	{
+		case 0:
+			colour_0 = 0xF00;
+			colour_1 = 0xFFF;
+			colour_2 = 0xFFF;
+			colour_6 = 0xFFF;
+			colour_7 = 0xFFF;
+			colour_8 = 0x0F0;
+	}
+}
+

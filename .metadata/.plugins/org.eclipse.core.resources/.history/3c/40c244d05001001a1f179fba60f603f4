@@ -1,0 +1,26 @@
+/*
+ * interrupt_handler.c
+ *
+ *  Created on: 31 Oct 2019
+ *      Author: s1758499
+ */
+#include "xil_types.h"
+
+u16 interruptCounter = 0;
+extern int interruptServiced;
+extern int state1;
+
+void hwTimerISR(void *CallbackRef)
+{
+	interruptServiced = FALSE;
+
+	interruptCounter++;
+
+	if (interruptCounter == 500)
+	{
+
+	}
+
+	interruptServiced = TRUE;
+}
+
