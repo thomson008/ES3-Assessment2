@@ -82,3 +82,80 @@
 14:10:42 INFO  : Processor reset is completed for microblaze_0
 14:12:18 INFO  : microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
 14:12:19 INFO  : Processor reset is completed for microblaze_0
+14:19:27 ERROR : Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+14:28:13 INFO  : Launching XSDB server: xsdb.bat -s D:/Xilinx/SDK/2015.2/scripts/xsdb/xsdb/xsdb-server.tcl
+14:28:22 INFO  : XSDB server has started successfully.
+14:28:22 INFO  : Processing command line option -hwspec C:/Users/Tomek/Assessment_2_Traffic_Light/es3_hw_assmnt_2/es3_hw_assmnt_2.sdk/top.hdf.
+14:28:24 INFO  : Checking for hwspec changes in the project top_hw_platform_0.
+14:30:04 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:30:04 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183711307A" && level==0} -index 0' command is executed.
+14:30:06 INFO  : FPGA configured successfully with bitstream "C:/Users/Tomek/Assessment_2_Traffic_Light/es3_hw_assmnt_2/es3_hw_assmnt_2.sdk/top_hw_platform_0/download.bit"
+14:31:01 INFO  : Processor reset is completed for microblaze_0
+14:32:27 INFO  : microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+14:32:29 INFO  : Processor reset is completed for microblaze_0
+14:44:53 INFO  : microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+14:44:55 INFO  : Processor reset is completed for microblaze_0
+14:46:04 INFO  : microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+14:46:05 INFO  : Processor reset is completed for microblaze_0
+14:52:42 INFO  : microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+14:52:44 INFO  : Processor reset is completed for microblaze_0
+14:54:50 INFO  : microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+14:54:52 INFO  : Processor reset is completed for microblaze_0
+14:57:32 INFO  : microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+14:57:33 INFO  : Processor reset is completed for microblaze_0
+14:57:54 INFO  : microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+14:57:56 INFO  : Processor reset is completed for microblaze_0
+14:59:01 INFO  : microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+14:59:02 INFO  : Processor reset is completed for microblaze_0
+15:00:09 INFO  : microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+15:00:10 INFO  : Processor reset is completed for microblaze_0
+15:01:05 INFO  : microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+15:01:06 INFO  : Processor reset is completed for microblaze_0
+15:02:10 INFO  : microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+15:02:56 INFO  : microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+15:02:57 INFO  : Processor reset is completed for microblaze_0
+15:03:55 INFO  : microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+15:03:58 INFO  : Processor reset is completed for microblaze_0
+15:06:38 INFO  : microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+15:06:40 INFO  : Processor reset is completed for microblaze_0
+15:15:31 INFO  : microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+15:15:32 INFO  : Processor reset is completed for microblaze_0
+15:20:44 INFO  : microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+15:20:45 INFO  : Processor reset is completed for microblaze_0
+15:23:55 INFO  : microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+15:23:56 INFO  : Processor reset is completed for microblaze_0
+15:36:21 INFO  : microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+15:36:23 INFO  : Processor reset is completed for microblaze_0
+15:37:57 INFO  : microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+15:37:58 INFO  : Processor reset is completed for microblaze_0
+15:38:41 INFO  : microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+15:38:42 INFO  : Processor reset is completed for microblaze_0
+15:40:14 INFO  : microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+15:40:16 INFO  : Processor reset is completed for microblaze_0
+15:40:54 INFO  : microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+15:41:21 INFO  : microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+15:41:23 INFO  : Processor reset is completed for microblaze_0
+15:42:23 INFO  : microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+15:42:25 INFO  : Processor reset is completed for microblaze_0
+15:44:47 INFO  : microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+15:44:48 INFO  : Processor reset is completed for microblaze_0
+15:46:55 INFO  : microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+15:46:56 INFO  : Processor reset is completed for microblaze_0
+15:48:07 INFO  : microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+15:48:08 INFO  : Processor reset is completed for microblaze_0
+15:51:10 INFO  : microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+15:51:12 INFO  : Processor reset is completed for microblaze_0
+15:56:40 INFO  : microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+15:56:42 INFO  : Processor reset is completed for microblaze_0
+16:06:34 INFO  : microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+16:06:36 INFO  : Processor reset is completed for microblaze_0
+16:08:41 INFO  : microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+16:08:42 INFO  : Processor reset is completed for microblaze_0
+16:09:51 INFO  : microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+16:09:53 INFO  : Processor reset is completed for microblaze_0
+16:15:39 INFO  : microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+16:15:40 INFO  : Processor reset is completed for microblaze_0
+16:17:48 INFO  : microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+16:17:49 INFO  : Processor reset is completed for microblaze_0
+16:24:57 INFO  : microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+16:24:59 INFO  : Processor reset is completed for microblaze_0

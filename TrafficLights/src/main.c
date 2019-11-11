@@ -50,31 +50,65 @@
 #include "gpio_init.h"
 #include "seg7_display.h"
 
+// Colours of first traffic light
 volatile u16 colour_0 = 0xF00;
 volatile u16 colour_1 = 0xFFF;
 volatile u16 colour_2 = 0xFFF;
 
+// Colours of second traffic lights
 volatile u16 colour_6 = 0xF00;
 volatile u16 colour_7 = 0xFFF;
 volatile u16 colour_8 = 0xFFF;
 
+// Colour of pedestrian light
 volatile u16 pd_colour = 0xF00;
 
 volatile u16 led_out = 0x8004;
+
+// Value of pedestrian button
 volatile u16 pd_button;
 
+// States of two traffic lights
 volatile int state_1 = 0;
 volatile int state_2 = 0;
 
+// Number to be displayed on the screen
+extern u16 disp_number;
 
+// Boolean flag denoting whether an interrupt has been serviced
 volatile int interruptServiced = FALSE;
 
+// Methods declarations
 void print(char *str);
 XStatus initGpio();
 XStatus setUpInterruptSystem();
 
 
-extern u16 disp_number;
+
+
+void controlXGpios()
+{
+	while (1)
+	{
+		XGpio_DiscreteWrite(&REGION_0_COLOUR, 1, colour_0);
+		XGpio_DiscreteWrite(&REGION_1_COLOUR, 1, colour_1);
+		XGpio_DiscreteWrite(&REGION_2_COLOUR, 1, colour_2);
+
+		XGpio_DiscreteWrite(&REGION_6_COLOUR, 1, colour_6);
+		XGpio_DiscreteWrite(&REGION_7_COLOUR, 1, colour_7);
+		XGpio_DiscreteWrite(&REGION_8_COLOUR, 1, colour_8);
+
+		XGpio_DiscreteWrite(&REGION_4_COLOUR, 1, pd_colour);
+
+		XGpio_DiscreteWrite(&LEDs, 1, led_out);
+
+		pd_button = XGpio_DiscreteRead(&PD_BTN, 1);
+
+		displayNumber(disp_number);
+
+		while (!interruptServiced);
+	}
+}
 
 int main()
 {
@@ -102,28 +136,10 @@ int main()
 
 	print("Interrupt set.\n\r");
 
-
-	while (1)
-	{
-		XGpio_DiscreteWrite(&REGION_0_COLOUR, 1, colour_0);
-		XGpio_DiscreteWrite(&REGION_1_COLOUR, 1, colour_1);
-		XGpio_DiscreteWrite(&REGION_2_COLOUR, 1, colour_2);
-
-		XGpio_DiscreteWrite(&REGION_6_COLOUR, 1, colour_6);
-		XGpio_DiscreteWrite(&REGION_7_COLOUR, 1, colour_7);
-		XGpio_DiscreteWrite(&REGION_8_COLOUR, 1, colour_8);
-
-		XGpio_DiscreteWrite(&REGION_4_COLOUR, 1, pd_colour);
-
-		XGpio_DiscreteWrite(&LEDs, 1, led_out);
-
-		pd_button = XGpio_DiscreteRead(&PD_BTN, 1);
-
-		displayNumber(disp_number);
-
-		while (!interruptServiced);
-	}
+	controlXGpios();
 
 	cleanup_platform();
 	return 0;
 }
+
+

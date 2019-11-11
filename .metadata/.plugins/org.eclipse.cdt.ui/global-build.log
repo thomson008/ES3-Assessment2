@@ -2217,3 +2217,1374 @@ mb-size TrafficLights.elf  |tee "TrafficLights.elf.size"
 14:12:17 **** Incremental Build of configuration Debug for project TrafficLights ****
 make all 
 make: Nothing to be done for `all'.
+14:30:54 **** Incremental Build of configuration Debug for project TrafficLights ****
+make all 
+make: Nothing to be done for `all'.
+14:32:19 **** Auto Build of configuration Debug for project TrafficLights ****
+make all 
+'Building file: ../src/interrupt_handler.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/interrupt_handler.o" -I../../TrafficLights_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/interrupt_handler.d" -MT"src/interrupt_handler.d" -o "src/interrupt_handler.o" "../src/interrupt_handler.c"
+'Finished building: ../src/interrupt_handler.c'
+' '
+'Building target: TrafficLights.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../TrafficLights_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -o "TrafficLights.elf"  ./src/gpio_init.o ./src/interrupt_handler.o ./src/main.o ./src/platform.o ./src/seg7_display.o ./src/xinterruptES3.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: TrafficLights.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size TrafficLights.elf  |tee "TrafficLights.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  16408	    704	   2544	  19656	   4cc8	TrafficLights.elf
+'Finished building: TrafficLights.elf.size'
+' '
+14:32:26 **** Incremental Build of configuration Debug for project TrafficLights ****
+make all 
+make: Nothing to be done for `all'.
+14:44:48 **** Auto Build of configuration Debug for project TrafficLights ****
+make all 
+'Building file: ../src/interrupt_handler.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/interrupt_handler.o" -I../../TrafficLights_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/interrupt_handler.d" -MT"src/interrupt_handler.d" -o "src/interrupt_handler.o" "../src/interrupt_handler.c"
+'Finished building: ../src/interrupt_handler.c'
+' '
+'Building target: TrafficLights.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../TrafficLights_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -o "TrafficLights.elf"  ./src/gpio_init.o ./src/interrupt_handler.o ./src/main.o ./src/platform.o ./src/seg7_display.o ./src/xinterruptES3.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: TrafficLights.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size TrafficLights.elf  |tee "TrafficLights.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  16428	    704	   2556	  19688	   4ce8	TrafficLights.elf
+'Finished building: TrafficLights.elf.size'
+' '
+14:44:53 **** Incremental Build of configuration Debug for project TrafficLights ****
+make all 
+make: Nothing to be done for `all'.
+14:45:55 **** Auto Build of configuration Debug for project TrafficLights ****
+make all 
+'Building file: ../src/interrupt_handler.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/interrupt_handler.o" -I../../TrafficLights_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/interrupt_handler.d" -MT"src/interrupt_handler.d" -o "src/interrupt_handler.o" "../src/interrupt_handler.c"
+'Finished building: ../src/interrupt_handler.c'
+' '
+'Building target: TrafficLights.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../TrafficLights_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -o "TrafficLights.elf"  ./src/gpio_init.o ./src/interrupt_handler.o ./src/main.o ./src/platform.o ./src/seg7_display.o ./src/xinterruptES3.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: TrafficLights.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size TrafficLights.elf  |tee "TrafficLights.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  16440	    704	   2552	  19696	   4cf0	TrafficLights.elf
+'Finished building: TrafficLights.elf.size'
+' '
+14:46:03 **** Incremental Build of configuration Debug for project TrafficLights ****
+make all 
+make: Nothing to be done for `all'.
+14:52:33 **** Auto Build of configuration Debug for project TrafficLights ****
+make all 
+'Building file: ../src/interrupt_handler.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/interrupt_handler.o" -I../../TrafficLights_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/interrupt_handler.d" -MT"src/interrupt_handler.d" -o "src/interrupt_handler.o" "../src/interrupt_handler.c"
+'Finished building: ../src/interrupt_handler.c'
+' '
+'Building target: TrafficLights.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../TrafficLights_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -o "TrafficLights.elf"  ./src/gpio_init.o ./src/interrupt_handler.o ./src/main.o ./src/platform.o ./src/seg7_display.o ./src/xinterruptES3.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: TrafficLights.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size TrafficLights.elf  |tee "TrafficLights.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  16444	    704	   2556	  19704	   4cf8	TrafficLights.elf
+'Finished building: TrafficLights.elf.size'
+' '
+14:52:42 **** Incremental Build of configuration Debug for project TrafficLights ****
+make all 
+make: Nothing to be done for `all'.
+14:53:16 **** Auto Build of configuration Debug for project TrafficLights ****
+make all 
+'Building file: ../src/interrupt_handler.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/interrupt_handler.o" -I../../TrafficLights_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/interrupt_handler.d" -MT"src/interrupt_handler.d" -o "src/interrupt_handler.o" "../src/interrupt_handler.c"
+'Finished building: ../src/interrupt_handler.c'
+' '
+'Building target: TrafficLights.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../TrafficLights_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -o "TrafficLights.elf"  ./src/gpio_init.o ./src/interrupt_handler.o ./src/main.o ./src/platform.o ./src/seg7_display.o ./src/xinterruptES3.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: TrafficLights.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size TrafficLights.elf  |tee "TrafficLights.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  16440	    704	   2552	  19696	   4cf0	TrafficLights.elf
+'Finished building: TrafficLights.elf.size'
+' '
+14:54:40 **** Auto Build of configuration Debug for project TrafficLights ****
+make all 
+'Building file: ../src/interrupt_handler.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/interrupt_handler.o" -I../../TrafficLights_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/interrupt_handler.d" -MT"src/interrupt_handler.d" -o "src/interrupt_handler.o" "../src/interrupt_handler.c"
+'Finished building: ../src/interrupt_handler.c'
+' '
+'Building target: TrafficLights.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../TrafficLights_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -o "TrafficLights.elf"  ./src/gpio_init.o ./src/interrupt_handler.o ./src/main.o ./src/platform.o ./src/seg7_display.o ./src/xinterruptES3.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: TrafficLights.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size TrafficLights.elf  |tee "TrafficLights.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  16464	    704	   2552	  19720	   4d08	TrafficLights.elf
+'Finished building: TrafficLights.elf.size'
+' '
+14:54:49 **** Incremental Build of configuration Debug for project TrafficLights ****
+make all 
+make: Nothing to be done for `all'.
+14:56:11 **** Auto Build of configuration Debug for project TrafficLights ****
+make all 
+'Building file: ../src/interrupt_handler.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/interrupt_handler.o" -I../../TrafficLights_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/interrupt_handler.d" -MT"src/interrupt_handler.d" -o "src/interrupt_handler.o" "../src/interrupt_handler.c"
+../src/interrupt_handler.c: In function 'hwTimerISR':
+../src/interrupt_handler.c:108:15: warning: comparison between pointer and integer
+   if (state_1 ==  && state_2 == 0)
+               ^
+../src/interrupt_handler.c:108:15: warning: suggest parentheses around comparison in operand of '==' [-Wparentheses]
+../src/interrupt_handler.c:108:3: error: label 'state_2' used but not defined
+   if (state_1 ==  && state_2 == 0)
+   ^
+make: *** [src/interrupt_handler.o] Error 1
+14:56:29 **** Auto Build of configuration Debug for project TrafficLights ****
+make all 
+'Building file: ../src/interrupt_handler.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/interrupt_handler.o" -I../../TrafficLights_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/interrupt_handler.d" -MT"src/interrupt_handler.d" -o "src/interrupt_handler.o" "../src/interrupt_handler.c"
+'Finished building: ../src/interrupt_handler.c'
+' '
+'Building target: TrafficLights.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../TrafficLights_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -o "TrafficLights.elf"  ./src/gpio_init.o ./src/interrupt_handler.o ./src/main.o ./src/platform.o ./src/seg7_display.o ./src/xinterruptES3.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: TrafficLights.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size TrafficLights.elf  |tee "TrafficLights.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  16444	    704	   2556	  19704	   4cf8	TrafficLights.elf
+'Finished building: TrafficLights.elf.size'
+' '
+14:57:03 **** Auto Build of configuration Debug for project TrafficLights ****
+make all 
+'Building file: ../src/interrupt_handler.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/interrupt_handler.o" -I../../TrafficLights_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/interrupt_handler.d" -MT"src/interrupt_handler.d" -o "src/interrupt_handler.o" "../src/interrupt_handler.c"
+'Finished building: ../src/interrupt_handler.c'
+' '
+'Building target: TrafficLights.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../TrafficLights_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -o "TrafficLights.elf"  ./src/gpio_init.o ./src/interrupt_handler.o ./src/main.o ./src/platform.o ./src/seg7_display.o ./src/xinterruptES3.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: TrafficLights.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size TrafficLights.elf  |tee "TrafficLights.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  16460	    704	   2556	  19720	   4d08	TrafficLights.elf
+'Finished building: TrafficLights.elf.size'
+' '
+14:57:08 **** Auto Build of configuration Debug for project TrafficLights ****
+make all 
+'Building file: ../src/interrupt_handler.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/interrupt_handler.o" -I../../TrafficLights_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/interrupt_handler.d" -MT"src/interrupt_handler.d" -o "src/interrupt_handler.o" "../src/interrupt_handler.c"
+'Finished building: ../src/interrupt_handler.c'
+' '
+'Building target: TrafficLights.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../TrafficLights_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -o "TrafficLights.elf"  ./src/gpio_init.o ./src/interrupt_handler.o ./src/main.o ./src/platform.o ./src/seg7_display.o ./src/xinterruptES3.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: TrafficLights.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size TrafficLights.elf  |tee "TrafficLights.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  16460	    704	   2556	  19720	   4d08	TrafficLights.elf
+'Finished building: TrafficLights.elf.size'
+' '
+14:57:31 **** Incremental Build of configuration Debug for project TrafficLights ****
+make all 
+make: Nothing to be done for `all'.
+14:57:47 **** Auto Build of configuration Debug for project TrafficLights ****
+make all 
+'Building file: ../src/interrupt_handler.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/interrupt_handler.o" -I../../TrafficLights_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/interrupt_handler.d" -MT"src/interrupt_handler.d" -o "src/interrupt_handler.o" "../src/interrupt_handler.c"
+'Finished building: ../src/interrupt_handler.c'
+' '
+'Building target: TrafficLights.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../TrafficLights_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -o "TrafficLights.elf"  ./src/gpio_init.o ./src/interrupt_handler.o ./src/main.o ./src/platform.o ./src/seg7_display.o ./src/xinterruptES3.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: TrafficLights.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size TrafficLights.elf  |tee "TrafficLights.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  16456	    704	   2552	  19712	   4d00	TrafficLights.elf
+'Finished building: TrafficLights.elf.size'
+' '
+14:57:54 **** Incremental Build of configuration Debug for project TrafficLights ****
+make all 
+make: Nothing to be done for `all'.
+14:58:53 **** Auto Build of configuration Debug for project TrafficLights ****
+make all 
+'Building file: ../src/interrupt_handler.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/interrupt_handler.o" -I../../TrafficLights_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/interrupt_handler.d" -MT"src/interrupt_handler.d" -o "src/interrupt_handler.o" "../src/interrupt_handler.c"
+'Finished building: ../src/interrupt_handler.c'
+' '
+'Building target: TrafficLights.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../TrafficLights_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -o "TrafficLights.elf"  ./src/gpio_init.o ./src/interrupt_handler.o ./src/main.o ./src/platform.o ./src/seg7_display.o ./src/xinterruptES3.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: TrafficLights.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size TrafficLights.elf  |tee "TrafficLights.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  16456	    704	   2552	  19712	   4d00	TrafficLights.elf
+'Finished building: TrafficLights.elf.size'
+' '
+14:58:57 **** Auto Build of configuration Debug for project TrafficLights ****
+make all 
+'Building file: ../src/interrupt_handler.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/interrupt_handler.o" -I../../TrafficLights_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/interrupt_handler.d" -MT"src/interrupt_handler.d" -o "src/interrupt_handler.o" "../src/interrupt_handler.c"
+'Finished building: ../src/interrupt_handler.c'
+' '
+'Building target: TrafficLights.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../TrafficLights_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -o "TrafficLights.elf"  ./src/gpio_init.o ./src/interrupt_handler.o ./src/main.o ./src/platform.o ./src/seg7_display.o ./src/xinterruptES3.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: TrafficLights.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size TrafficLights.elf  |tee "TrafficLights.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  16472	    704	   2552	  19728	   4d10	TrafficLights.elf
+'Finished building: TrafficLights.elf.size'
+' '
+14:59:00 **** Incremental Build of configuration Debug for project TrafficLights ****
+make all 
+make: Nothing to be done for `all'.
+14:59:59 **** Auto Build of configuration Debug for project TrafficLights ****
+make all 
+'Building file: ../src/interrupt_handler.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/interrupt_handler.o" -I../../TrafficLights_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/interrupt_handler.d" -MT"src/interrupt_handler.d" -o "src/interrupt_handler.o" "../src/interrupt_handler.c"
+'Finished building: ../src/interrupt_handler.c'
+' '
+'Building target: TrafficLights.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../TrafficLights_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -o "TrafficLights.elf"  ./src/gpio_init.o ./src/interrupt_handler.o ./src/main.o ./src/platform.o ./src/seg7_display.o ./src/xinterruptES3.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: TrafficLights.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size TrafficLights.elf  |tee "TrafficLights.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  16456	    704	   2552	  19712	   4d00	TrafficLights.elf
+'Finished building: TrafficLights.elf.size'
+' '
+15:00:08 **** Incremental Build of configuration Debug for project TrafficLights ****
+make all 
+make: Nothing to be done for `all'.
+15:00:56 **** Auto Build of configuration Debug for project TrafficLights ****
+make all 
+'Building file: ../src/interrupt_handler.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/interrupt_handler.o" -I../../TrafficLights_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/interrupt_handler.d" -MT"src/interrupt_handler.d" -o "src/interrupt_handler.o" "../src/interrupt_handler.c"
+'Finished building: ../src/interrupt_handler.c'
+' '
+'Building target: TrafficLights.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../TrafficLights_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -o "TrafficLights.elf"  ./src/gpio_init.o ./src/interrupt_handler.o ./src/main.o ./src/platform.o ./src/seg7_display.o ./src/xinterruptES3.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: TrafficLights.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size TrafficLights.elf  |tee "TrafficLights.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  16456	    704	   2552	  19712	   4d00	TrafficLights.elf
+'Finished building: TrafficLights.elf.size'
+' '
+15:01:02 **** Auto Build of configuration Debug for project TrafficLights ****
+make all 
+'Building file: ../src/interrupt_handler.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/interrupt_handler.o" -I../../TrafficLights_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/interrupt_handler.d" -MT"src/interrupt_handler.d" -o "src/interrupt_handler.o" "../src/interrupt_handler.c"
+'Finished building: ../src/interrupt_handler.c'
+' '
+'Building target: TrafficLights.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../TrafficLights_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -o "TrafficLights.elf"  ./src/gpio_init.o ./src/interrupt_handler.o ./src/main.o ./src/platform.o ./src/seg7_display.o ./src/xinterruptES3.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: TrafficLights.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size TrafficLights.elf  |tee "TrafficLights.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  16456	    704	   2552	  19712	   4d00	TrafficLights.elf
+'Finished building: TrafficLights.elf.size'
+' '
+15:01:04 **** Incremental Build of configuration Debug for project TrafficLights ****
+make all 
+make: Nothing to be done for `all'.
+15:02:06 **** Auto Build of configuration Debug for project TrafficLights ****
+make all 
+'Building file: ../src/interrupt_handler.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/interrupt_handler.o" -I../../TrafficLights_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/interrupt_handler.d" -MT"src/interrupt_handler.d" -o "src/interrupt_handler.o" "../src/interrupt_handler.c"
+'Finished building: ../src/interrupt_handler.c'
+' '
+'Building target: TrafficLights.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../TrafficLights_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -o "TrafficLights.elf"  ./src/gpio_init.o ./src/interrupt_handler.o ./src/main.o ./src/platform.o ./src/seg7_display.o ./src/xinterruptES3.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: TrafficLights.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size TrafficLights.elf  |tee "TrafficLights.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  16468	    704	   2556	  19728	   4d10	TrafficLights.elf
+'Finished building: TrafficLights.elf.size'
+' '
+15:02:09 **** Incremental Build of configuration Debug for project TrafficLights ****
+make all 
+make: Nothing to be done for `all'.
+15:02:56 **** Incremental Build of configuration Debug for project TrafficLights ****
+make all 
+make: Nothing to be done for `all'.
+15:03:48 **** Auto Build of configuration Debug for project TrafficLights ****
+make all 
+'Building file: ../src/interrupt_handler.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/interrupt_handler.o" -I../../TrafficLights_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/interrupt_handler.d" -MT"src/interrupt_handler.d" -o "src/interrupt_handler.o" "../src/interrupt_handler.c"
+'Finished building: ../src/interrupt_handler.c'
+' '
+'Building target: TrafficLights.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../TrafficLights_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -o "TrafficLights.elf"  ./src/gpio_init.o ./src/interrupt_handler.o ./src/main.o ./src/platform.o ./src/seg7_display.o ./src/xinterruptES3.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: TrafficLights.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size TrafficLights.elf  |tee "TrafficLights.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  16456	    704	   2552	  19712	   4d00	TrafficLights.elf
+'Finished building: TrafficLights.elf.size'
+' '
+15:03:55 **** Incremental Build of configuration Debug for project TrafficLights ****
+make all 
+make: Nothing to be done for `all'.
+15:06:34 **** Auto Build of configuration Debug for project TrafficLights ****
+make all 
+'Building file: ../src/interrupt_handler.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/interrupt_handler.o" -I../../TrafficLights_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/interrupt_handler.d" -MT"src/interrupt_handler.d" -o "src/interrupt_handler.o" "../src/interrupt_handler.c"
+'Finished building: ../src/interrupt_handler.c'
+' '
+'Building target: TrafficLights.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../TrafficLights_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -o "TrafficLights.elf"  ./src/gpio_init.o ./src/interrupt_handler.o ./src/main.o ./src/platform.o ./src/seg7_display.o ./src/xinterruptES3.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: TrafficLights.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size TrafficLights.elf  |tee "TrafficLights.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  16608	    704	   2552	  19864	   4d98	TrafficLights.elf
+'Finished building: TrafficLights.elf.size'
+' '
+15:06:38 **** Incremental Build of configuration Debug for project TrafficLights ****
+make all 
+make: Nothing to be done for `all'.
+15:12:10 **** Auto Build of configuration Debug for project TrafficLights ****
+make all 
+'Building file: ../src/interrupt_handler.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/interrupt_handler.o" -I../../TrafficLights_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/interrupt_handler.d" -MT"src/interrupt_handler.d" -o "src/interrupt_handler.o" "../src/interrupt_handler.c"
+'Finished building: ../src/interrupt_handler.c'
+' '
+'Building target: TrafficLights.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../TrafficLights_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -o "TrafficLights.elf"  ./src/gpio_init.o ./src/interrupt_handler.o ./src/main.o ./src/platform.o ./src/seg7_display.o ./src/xinterruptES3.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: TrafficLights.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size TrafficLights.elf  |tee "TrafficLights.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  16616	    704	   2552	  19872	   4da0	TrafficLights.elf
+'Finished building: TrafficLights.elf.size'
+' '
+15:13:15 **** Auto Build of configuration Debug for project TrafficLights ****
+make all 
+'Building file: ../src/interrupt_handler.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/interrupt_handler.o" -I../../TrafficLights_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/interrupt_handler.d" -MT"src/interrupt_handler.d" -o "src/interrupt_handler.o" "../src/interrupt_handler.c"
+../src/interrupt_handler.c: In function 'hwTimerISR':
+../src/interrupt_handler.c:107:3: warning: implicit declaration of function 'enablePedestrian' [-Wimplicit-function-declaration]
+   enablePedestrian();
+   ^
+../src/interrupt_handler.c: At top level:
+../src/interrupt_handler.c:140:6: warning: conflicting types for 'enablePedestrian'
+ void enablePedestrian()
+      ^
+../src/interrupt_handler.c:107:3: note: previous implicit declaration of 'enablePedestrian' was here
+   enablePedestrian();
+   ^
+'Finished building: ../src/interrupt_handler.c'
+' '
+'Building target: TrafficLights.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../TrafficLights_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -o "TrafficLights.elf"  ./src/gpio_init.o ./src/interrupt_handler.o ./src/main.o ./src/platform.o ./src/seg7_display.o ./src/xinterruptES3.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: TrafficLights.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size TrafficLights.elf  |tee "TrafficLights.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  16652	    704	   2556	  19912	   4dc8	TrafficLights.elf
+'Finished building: TrafficLights.elf.size'
+' '
+15:13:47 **** Auto Build of configuration Debug for project TrafficLights ****
+make all 
+'Building file: ../src/interrupt_handler.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/interrupt_handler.o" -I../../TrafficLights_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/interrupt_handler.d" -MT"src/interrupt_handler.d" -o "src/interrupt_handler.o" "../src/interrupt_handler.c"
+'Finished building: ../src/interrupt_handler.c'
+' '
+'Building target: TrafficLights.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../TrafficLights_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -o "TrafficLights.elf"  ./src/gpio_init.o ./src/interrupt_handler.o ./src/main.o ./src/platform.o ./src/seg7_display.o ./src/xinterruptES3.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: TrafficLights.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size TrafficLights.elf  |tee "TrafficLights.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  16652	    704	   2556	  19912	   4dc8	TrafficLights.elf
+'Finished building: TrafficLights.elf.size'
+' '
+15:15:08 **** Auto Build of configuration Debug for project TrafficLights ****
+make all 
+'Building file: ../src/interrupt_handler.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/interrupt_handler.o" -I../../TrafficLights_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/interrupt_handler.d" -MT"src/interrupt_handler.d" -o "src/interrupt_handler.o" "../src/interrupt_handler.c"
+'Finished building: ../src/interrupt_handler.c'
+' '
+'Building target: TrafficLights.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../TrafficLights_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -o "TrafficLights.elf"  ./src/gpio_init.o ./src/interrupt_handler.o ./src/main.o ./src/platform.o ./src/seg7_display.o ./src/xinterruptES3.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: TrafficLights.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size TrafficLights.elf  |tee "TrafficLights.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  16656	    704	   2552	  19912	   4dc8	TrafficLights.elf
+'Finished building: TrafficLights.elf.size'
+' '
+15:15:27 **** Auto Build of configuration Debug for project TrafficLights ****
+make all 
+'Building file: ../src/interrupt_handler.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/interrupt_handler.o" -I../../TrafficLights_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/interrupt_handler.d" -MT"src/interrupt_handler.d" -o "src/interrupt_handler.o" "../src/interrupt_handler.c"
+'Finished building: ../src/interrupt_handler.c'
+' '
+'Building target: TrafficLights.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../TrafficLights_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -o "TrafficLights.elf"  ./src/gpio_init.o ./src/interrupt_handler.o ./src/main.o ./src/platform.o ./src/seg7_display.o ./src/xinterruptES3.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: TrafficLights.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size TrafficLights.elf  |tee "TrafficLights.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  16660	    704	   2556	  19920	   4dd0	TrafficLights.elf
+'Finished building: TrafficLights.elf.size'
+' '
+15:15:30 **** Incremental Build of configuration Debug for project TrafficLights ****
+make all 
+make: Nothing to be done for `all'.
+15:16:03 **** Auto Build of configuration Debug for project TrafficLights ****
+make all 
+'Building file: ../src/interrupt_handler.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/interrupt_handler.o" -I../../TrafficLights_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/interrupt_handler.d" -MT"src/interrupt_handler.d" -o "src/interrupt_handler.o" "../src/interrupt_handler.c"
+'Finished building: ../src/interrupt_handler.c'
+' '
+'Building target: TrafficLights.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../TrafficLights_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -o "TrafficLights.elf"  ./src/gpio_init.o ./src/interrupt_handler.o ./src/main.o ./src/platform.o ./src/seg7_display.o ./src/xinterruptES3.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: TrafficLights.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size TrafficLights.elf  |tee "TrafficLights.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  16656	    704	   2552	  19912	   4dc8	TrafficLights.elf
+'Finished building: TrafficLights.elf.size'
+' '
+15:18:40 **** Auto Build of configuration Debug for project TrafficLights ****
+make all 
+'Building file: ../src/interrupt_handler.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/interrupt_handler.o" -I../../TrafficLights_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/interrupt_handler.d" -MT"src/interrupt_handler.d" -o "src/interrupt_handler.o" "../src/interrupt_handler.c"
+'Finished building: ../src/interrupt_handler.c'
+' '
+'Building target: TrafficLights.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../TrafficLights_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -o "TrafficLights.elf"  ./src/gpio_init.o ./src/interrupt_handler.o ./src/main.o ./src/platform.o ./src/seg7_display.o ./src/xinterruptES3.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: TrafficLights.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size TrafficLights.elf  |tee "TrafficLights.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  16612	    704	   2556	  19872	   4da0	TrafficLights.elf
+'Finished building: TrafficLights.elf.size'
+' '
+15:19:53 **** Auto Build of configuration Debug for project TrafficLights ****
+make all 
+'Building file: ../src/interrupt_handler.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/interrupt_handler.o" -I../../TrafficLights_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/interrupt_handler.d" -MT"src/interrupt_handler.d" -o "src/interrupt_handler.o" "../src/interrupt_handler.c"
+'Finished building: ../src/interrupt_handler.c'
+' '
+'Building target: TrafficLights.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../TrafficLights_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -o "TrafficLights.elf"  ./src/gpio_init.o ./src/interrupt_handler.o ./src/main.o ./src/platform.o ./src/seg7_display.o ./src/xinterruptES3.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: TrafficLights.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size TrafficLights.elf  |tee "TrafficLights.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  16612	    704	   2556	  19872	   4da0	TrafficLights.elf
+'Finished building: TrafficLights.elf.size'
+' '
+15:20:21 **** Auto Build of configuration Debug for project TrafficLights ****
+make all 
+'Building file: ../src/interrupt_handler.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/interrupt_handler.o" -I../../TrafficLights_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/interrupt_handler.d" -MT"src/interrupt_handler.d" -o "src/interrupt_handler.o" "../src/interrupt_handler.c"
+../src/interrupt_handler.c: In function 'hwTimerISR':
+../src/interrupt_handler.c:107:3: warning: implicit declaration of function 'enablePedestrian' [-Wimplicit-function-declaration]
+   if (enablePedestrian())
+   ^
+'Finished building: ../src/interrupt_handler.c'
+' '
+'Building target: TrafficLights.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../TrafficLights_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -o "TrafficLights.elf"  ./src/gpio_init.o ./src/interrupt_handler.o ./src/main.o ./src/platform.o ./src/seg7_display.o ./src/xinterruptES3.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: TrafficLights.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size TrafficLights.elf  |tee "TrafficLights.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  16668	    704	   2556	  19928	   4dd8	TrafficLights.elf
+'Finished building: TrafficLights.elf.size'
+' '
+15:20:36 **** Auto Build of configuration Debug for project TrafficLights ****
+make all 
+'Building file: ../src/interrupt_handler.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/interrupt_handler.o" -I../../TrafficLights_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/interrupt_handler.d" -MT"src/interrupt_handler.d" -o "src/interrupt_handler.o" "../src/interrupt_handler.c"
+'Finished building: ../src/interrupt_handler.c'
+' '
+'Building target: TrafficLights.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../TrafficLights_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -o "TrafficLights.elf"  ./src/gpio_init.o ./src/interrupt_handler.o ./src/main.o ./src/platform.o ./src/seg7_display.o ./src/xinterruptES3.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: TrafficLights.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size TrafficLights.elf  |tee "TrafficLights.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  16668	    704	   2556	  19928	   4dd8	TrafficLights.elf
+'Finished building: TrafficLights.elf.size'
+' '
+15:20:41 **** Auto Build of configuration Debug for project TrafficLights ****
+make all 
+'Building file: ../src/interrupt_handler.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/interrupt_handler.o" -I../../TrafficLights_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/interrupt_handler.d" -MT"src/interrupt_handler.d" -o "src/interrupt_handler.o" "../src/interrupt_handler.c"
+'Finished building: ../src/interrupt_handler.c'
+' '
+'Building target: TrafficLights.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../TrafficLights_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -o "TrafficLights.elf"  ./src/gpio_init.o ./src/interrupt_handler.o ./src/main.o ./src/platform.o ./src/seg7_display.o ./src/xinterruptES3.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: TrafficLights.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size TrafficLights.elf  |tee "TrafficLights.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  16668	    704	   2556	  19928	   4dd8	TrafficLights.elf
+'Finished building: TrafficLights.elf.size'
+' '
+15:20:43 **** Incremental Build of configuration Debug for project TrafficLights ****
+make all 
+make: Nothing to be done for `all'.
+15:22:11 **** Auto Build of configuration Debug for project TrafficLights ****
+make all 
+'Building file: ../src/interrupt_handler.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/interrupt_handler.o" -I../../TrafficLights_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/interrupt_handler.d" -MT"src/interrupt_handler.d" -o "src/interrupt_handler.o" "../src/interrupt_handler.c"
+'Finished building: ../src/interrupt_handler.c'
+' '
+'Building target: TrafficLights.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../TrafficLights_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -o "TrafficLights.elf"  ./src/gpio_init.o ./src/interrupt_handler.o ./src/main.o ./src/platform.o ./src/seg7_display.o ./src/xinterruptES3.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: TrafficLights.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size TrafficLights.elf  |tee "TrafficLights.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  16692	    704	   2556	  19952	   4df0	TrafficLights.elf
+'Finished building: TrafficLights.elf.size'
+' '
+15:22:26 **** Auto Build of configuration Debug for project TrafficLights ****
+make all 
+'Building file: ../src/interrupt_handler.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/interrupt_handler.o" -I../../TrafficLights_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/interrupt_handler.d" -MT"src/interrupt_handler.d" -o "src/interrupt_handler.o" "../src/interrupt_handler.c"
+../src/interrupt_handler.c: In function 'hwTimerISR':
+../src/interrupt_handler.c:147:3: warning: implicit declaration of function 'updateStates' [-Wimplicit-function-declaration]
+   updateStates();
+   ^
+../src/interrupt_handler.c: At top level:
+../src/interrupt_handler.c:152:6: warning: conflicting types for 'updateStates'
+ void updateStates()
+      ^
+../src/interrupt_handler.c:147:3: note: previous implicit declaration of 'updateStates' was here
+   updateStates();
+   ^
+'Finished building: ../src/interrupt_handler.c'
+' '
+'Building target: TrafficLights.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../TrafficLights_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -o "TrafficLights.elf"  ./src/gpio_init.o ./src/interrupt_handler.o ./src/main.o ./src/platform.o ./src/seg7_display.o ./src/xinterruptES3.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: TrafficLights.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size TrafficLights.elf  |tee "TrafficLights.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  16716	    704	   2556	  19976	   4e08	TrafficLights.elf
+'Finished building: TrafficLights.elf.size'
+' '
+15:22:40 **** Auto Build of configuration Debug for project TrafficLights ****
+make all 
+'Building file: ../src/interrupt_handler.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/interrupt_handler.o" -I../../TrafficLights_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/interrupt_handler.d" -MT"src/interrupt_handler.d" -o "src/interrupt_handler.o" "../src/interrupt_handler.c"
+'Finished building: ../src/interrupt_handler.c'
+' '
+'Building target: TrafficLights.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../TrafficLights_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -o "TrafficLights.elf"  ./src/gpio_init.o ./src/interrupt_handler.o ./src/main.o ./src/platform.o ./src/seg7_display.o ./src/xinterruptES3.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: TrafficLights.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size TrafficLights.elf  |tee "TrafficLights.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  16716	    704	   2556	  19976	   4e08	TrafficLights.elf
+'Finished building: TrafficLights.elf.size'
+' '
+15:22:53 **** Auto Build of configuration Debug for project TrafficLights ****
+make all 
+'Building file: ../src/interrupt_handler.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/interrupt_handler.o" -I../../TrafficLights_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/interrupt_handler.d" -MT"src/interrupt_handler.d" -o "src/interrupt_handler.o" "../src/interrupt_handler.c"
+'Finished building: ../src/interrupt_handler.c'
+' '
+'Building target: TrafficLights.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../TrafficLights_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -o "TrafficLights.elf"  ./src/gpio_init.o ./src/interrupt_handler.o ./src/main.o ./src/platform.o ./src/seg7_display.o ./src/xinterruptES3.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: TrafficLights.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size TrafficLights.elf  |tee "TrafficLights.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  16716	    704	   2556	  19976	   4e08	TrafficLights.elf
+'Finished building: TrafficLights.elf.size'
+' '
+15:23:54 **** Incremental Build of configuration Debug for project TrafficLights ****
+make all 
+make: Nothing to be done for `all'.
+15:25:49 **** Auto Build of configuration Debug for project TrafficLights ****
+make all 
+'Building file: ../src/interrupt_handler.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/interrupt_handler.o" -I../../TrafficLights_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/interrupt_handler.d" -MT"src/interrupt_handler.d" -o "src/interrupt_handler.o" "../src/interrupt_handler.c"
+'Finished building: ../src/interrupt_handler.c'
+' '
+'Building target: TrafficLights.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../TrafficLights_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -o "TrafficLights.elf"  ./src/gpio_init.o ./src/interrupt_handler.o ./src/main.o ./src/platform.o ./src/seg7_display.o ./src/xinterruptES3.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: TrafficLights.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size TrafficLights.elf  |tee "TrafficLights.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  16716	    704	   2556	  19976	   4e08	TrafficLights.elf
+'Finished building: TrafficLights.elf.size'
+' '
+15:27:12 **** Auto Build of configuration Debug for project TrafficLights ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../TrafficLights_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: TrafficLights.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../TrafficLights_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -o "TrafficLights.elf"  ./src/gpio_init.o ./src/interrupt_handler.o ./src/main.o ./src/platform.o ./src/seg7_display.o ./src/xinterruptES3.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: TrafficLights.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size TrafficLights.elf  |tee "TrafficLights.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  17168	    704	   2552	  20424	   4fc8	TrafficLights.elf
+'Finished building: TrafficLights.elf.size'
+' '
+15:27:36 **** Auto Build of configuration Debug for project TrafficLights ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../TrafficLights_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:106:2: warning: implicit declaration of function 'controlXGpios' [-Wimplicit-function-declaration]
+  controlXGpios();
+  ^
+../src/main.c: At top level:
+../src/main.c:112:6: warning: conflicting types for 'controlXGpios'
+ void controlXGpios()
+      ^
+../src/main.c:106:2: note: previous implicit declaration of 'controlXGpios' was here
+  controlXGpios();
+  ^
+'Finished building: ../src/main.c'
+' '
+'Building target: TrafficLights.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../TrafficLights_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -o "TrafficLights.elf"  ./src/gpio_init.o ./src/interrupt_handler.o ./src/main.o ./src/platform.o ./src/seg7_display.o ./src/xinterruptES3.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: TrafficLights.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size TrafficLights.elf  |tee "TrafficLights.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  16756	    704	   2556	  20016	   4e30	TrafficLights.elf
+'Finished building: TrafficLights.elf.size'
+' '
+15:27:39 **** Auto Build of configuration Debug for project TrafficLights ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../TrafficLights_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:105:2: warning: implicit declaration of function 'controlXGpios' [-Wimplicit-function-declaration]
+  controlXGpios();
+  ^
+../src/main.c: At top level:
+../src/main.c:111:6: warning: conflicting types for 'controlXGpios'
+ void controlXGpios()
+      ^
+../src/main.c:105:2: note: previous implicit declaration of 'controlXGpios' was here
+  controlXGpios();
+  ^
+'Finished building: ../src/main.c'
+' '
+'Building target: TrafficLights.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../TrafficLights_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -o "TrafficLights.elf"  ./src/gpio_init.o ./src/interrupt_handler.o ./src/main.o ./src/platform.o ./src/seg7_display.o ./src/xinterruptES3.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: TrafficLights.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size TrafficLights.elf  |tee "TrafficLights.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  16756	    704	   2556	  20016	   4e30	TrafficLights.elf
+'Finished building: TrafficLights.elf.size'
+' '
+15:27:53 **** Auto Build of configuration Debug for project TrafficLights ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../TrafficLights_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: TrafficLights.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../TrafficLights_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -o "TrafficLights.elf"  ./src/gpio_init.o ./src/interrupt_handler.o ./src/main.o ./src/platform.o ./src/seg7_display.o ./src/xinterruptES3.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: TrafficLights.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size TrafficLights.elf  |tee "TrafficLights.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  16756	    704	   2556	  20016	   4e30	TrafficLights.elf
+'Finished building: TrafficLights.elf.size'
+' '
+15:28:34 **** Auto Build of configuration Debug for project TrafficLights ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../TrafficLights_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: TrafficLights.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../TrafficLights_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -o "TrafficLights.elf"  ./src/gpio_init.o ./src/interrupt_handler.o ./src/main.o ./src/platform.o ./src/seg7_display.o ./src/xinterruptES3.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: TrafficLights.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size TrafficLights.elf  |tee "TrafficLights.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  16756	    704	   2556	  20016	   4e30	TrafficLights.elf
+'Finished building: TrafficLights.elf.size'
+' '
+15:29:54 **** Auto Build of configuration Debug for project TrafficLights ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../TrafficLights_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: TrafficLights.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../TrafficLights_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -o "TrafficLights.elf"  ./src/gpio_init.o ./src/interrupt_handler.o ./src/main.o ./src/platform.o ./src/seg7_display.o ./src/xinterruptES3.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: TrafficLights.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size TrafficLights.elf  |tee "TrafficLights.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  16756	    704	   2556	  20016	   4e30	TrafficLights.elf
+'Finished building: TrafficLights.elf.size'
+' '
+15:30:09 **** Auto Build of configuration Debug for project TrafficLights ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../TrafficLights_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: TrafficLights.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../TrafficLights_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -o "TrafficLights.elf"  ./src/gpio_init.o ./src/interrupt_handler.o ./src/main.o ./src/platform.o ./src/seg7_display.o ./src/xinterruptES3.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: TrafficLights.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size TrafficLights.elf  |tee "TrafficLights.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  16756	    704	   2556	  20016	   4e30	TrafficLights.elf
+'Finished building: TrafficLights.elf.size'
+' '
+15:35:53 **** Auto Build of configuration Debug for project TrafficLights ****
+make all 
+'Building file: ../src/interrupt_handler.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/interrupt_handler.o" -I../../TrafficLights_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/interrupt_handler.d" -MT"src/interrupt_handler.d" -o "src/interrupt_handler.o" "../src/interrupt_handler.c"
+'Finished building: ../src/interrupt_handler.c'
+' '
+'Building target: TrafficLights.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../TrafficLights_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -o "TrafficLights.elf"  ./src/gpio_init.o ./src/interrupt_handler.o ./src/main.o ./src/platform.o ./src/seg7_display.o ./src/xinterruptES3.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: TrafficLights.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size TrafficLights.elf  |tee "TrafficLights.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  16988	    704	   2556	  20248	   4f18	TrafficLights.elf
+'Finished building: TrafficLights.elf.size'
+' '
+15:36:21 **** Incremental Build of configuration Debug for project TrafficLights ****
+make all 
+make: Nothing to be done for `all'.
+15:37:36 **** Auto Build of configuration Debug for project TrafficLights ****
+make all 
+'Building file: ../src/interrupt_handler.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/interrupt_handler.o" -I../../TrafficLights_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/interrupt_handler.d" -MT"src/interrupt_handler.d" -o "src/interrupt_handler.o" "../src/interrupt_handler.c"
+'Finished building: ../src/interrupt_handler.c'
+' '
+'Building target: TrafficLights.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../TrafficLights_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -o "TrafficLights.elf"  ./src/gpio_init.o ./src/interrupt_handler.o ./src/main.o ./src/platform.o ./src/seg7_display.o ./src/xinterruptES3.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: TrafficLights.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size TrafficLights.elf  |tee "TrafficLights.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  17000	    704	   2552	  20256	   4f20	TrafficLights.elf
+'Finished building: TrafficLights.elf.size'
+' '
+15:37:47 **** Auto Build of configuration Debug for project TrafficLights ****
+make all 
+'Building file: ../src/interrupt_handler.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/interrupt_handler.o" -I../../TrafficLights_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/interrupt_handler.d" -MT"src/interrupt_handler.d" -o "src/interrupt_handler.o" "../src/interrupt_handler.c"
+'Finished building: ../src/interrupt_handler.c'
+' '
+'Building target: TrafficLights.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../TrafficLights_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -o "TrafficLights.elf"  ./src/gpio_init.o ./src/interrupt_handler.o ./src/main.o ./src/platform.o ./src/seg7_display.o ./src/xinterruptES3.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: TrafficLights.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size TrafficLights.elf  |tee "TrafficLights.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  16988	    704	   2556	  20248	   4f18	TrafficLights.elf
+'Finished building: TrafficLights.elf.size'
+' '
+15:37:56 **** Incremental Build of configuration Debug for project TrafficLights ****
+make all 
+make: Nothing to be done for `all'.
+15:38:37 **** Auto Build of configuration Debug for project TrafficLights ****
+make all 
+'Building file: ../src/interrupt_handler.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/interrupt_handler.o" -I../../TrafficLights_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/interrupt_handler.d" -MT"src/interrupt_handler.d" -o "src/interrupt_handler.o" "../src/interrupt_handler.c"
+'Finished building: ../src/interrupt_handler.c'
+' '
+'Building target: TrafficLights.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../TrafficLights_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -o "TrafficLights.elf"  ./src/gpio_init.o ./src/interrupt_handler.o ./src/main.o ./src/platform.o ./src/seg7_display.o ./src/xinterruptES3.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: TrafficLights.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size TrafficLights.elf  |tee "TrafficLights.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  16756	    704	   2556	  20016	   4e30	TrafficLights.elf
+'Finished building: TrafficLights.elf.size'
+' '
+15:38:40 **** Incremental Build of configuration Debug for project TrafficLights ****
+make all 
+make: Nothing to be done for `all'.
+15:39:43 **** Auto Build of configuration Debug for project TrafficLights ****
+make all 
+'Building file: ../src/interrupt_handler.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/interrupt_handler.o" -I../../TrafficLights_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/interrupt_handler.d" -MT"src/interrupt_handler.d" -o "src/interrupt_handler.o" "../src/interrupt_handler.c"
+'Finished building: ../src/interrupt_handler.c'
+' '
+'Building target: TrafficLights.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../TrafficLights_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -o "TrafficLights.elf"  ./src/gpio_init.o ./src/interrupt_handler.o ./src/main.o ./src/platform.o ./src/seg7_display.o ./src/xinterruptES3.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: TrafficLights.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size TrafficLights.elf  |tee "TrafficLights.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  16780	    704	   2556	  20040	   4e48	TrafficLights.elf
+'Finished building: TrafficLights.elf.size'
+' '
+15:40:09 **** Auto Build of configuration Debug for project TrafficLights ****
+make all 
+'Building file: ../src/interrupt_handler.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/interrupt_handler.o" -I../../TrafficLights_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/interrupt_handler.d" -MT"src/interrupt_handler.d" -o "src/interrupt_handler.o" "../src/interrupt_handler.c"
+'Finished building: ../src/interrupt_handler.c'
+' '
+'Building target: TrafficLights.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../TrafficLights_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -o "TrafficLights.elf"  ./src/gpio_init.o ./src/interrupt_handler.o ./src/main.o ./src/platform.o ./src/seg7_display.o ./src/xinterruptES3.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: TrafficLights.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size TrafficLights.elf  |tee "TrafficLights.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  17012	    704	   2556	  20272	   4f30	TrafficLights.elf
+'Finished building: TrafficLights.elf.size'
+' '
+15:40:14 **** Incremental Build of configuration Debug for project TrafficLights ****
+make all 
+make: Nothing to be done for `all'.
+15:40:48 **** Auto Build of configuration Debug for project TrafficLights ****
+make all 
+'Building file: ../src/interrupt_handler.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/interrupt_handler.o" -I../../TrafficLights_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/interrupt_handler.d" -MT"src/interrupt_handler.d" -o "src/interrupt_handler.o" "../src/interrupt_handler.c"
+'Finished building: ../src/interrupt_handler.c'
+' '
+'Building target: TrafficLights.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../TrafficLights_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -o "TrafficLights.elf"  ./src/gpio_init.o ./src/interrupt_handler.o ./src/main.o ./src/platform.o ./src/seg7_display.o ./src/xinterruptES3.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: TrafficLights.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size TrafficLights.elf  |tee "TrafficLights.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  17008	    704	   2552	  20264	   4f28	TrafficLights.elf
+'Finished building: TrafficLights.elf.size'
+' '
+15:40:53 **** Incremental Build of configuration Debug for project TrafficLights ****
+make all 
+make: Nothing to be done for `all'.
+15:41:17 **** Auto Build of configuration Debug for project TrafficLights ****
+make all 
+'Building file: ../src/interrupt_handler.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/interrupt_handler.o" -I../../TrafficLights_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/interrupt_handler.d" -MT"src/interrupt_handler.d" -o "src/interrupt_handler.o" "../src/interrupt_handler.c"
+'Finished building: ../src/interrupt_handler.c'
+' '
+'Building target: TrafficLights.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../TrafficLights_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -o "TrafficLights.elf"  ./src/gpio_init.o ./src/interrupt_handler.o ./src/main.o ./src/platform.o ./src/seg7_display.o ./src/xinterruptES3.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: TrafficLights.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size TrafficLights.elf  |tee "TrafficLights.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  17004	    704	   2556	  20264	   4f28	TrafficLights.elf
+'Finished building: TrafficLights.elf.size'
+' '
+15:41:21 **** Incremental Build of configuration Debug for project TrafficLights ****
+make all 
+make: Nothing to be done for `all'.
+15:42:00 **** Auto Build of configuration Debug for project TrafficLights ****
+make all 
+'Building file: ../src/interrupt_handler.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/interrupt_handler.o" -I../../TrafficLights_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/interrupt_handler.d" -MT"src/interrupt_handler.d" -o "src/interrupt_handler.o" "../src/interrupt_handler.c"
+'Finished building: ../src/interrupt_handler.c'
+' '
+'Building target: TrafficLights.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../TrafficLights_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -o "TrafficLights.elf"  ./src/gpio_init.o ./src/interrupt_handler.o ./src/main.o ./src/platform.o ./src/seg7_display.o ./src/xinterruptES3.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: TrafficLights.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size TrafficLights.elf  |tee "TrafficLights.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  17008	    704	   2552	  20264	   4f28	TrafficLights.elf
+'Finished building: TrafficLights.elf.size'
+' '
+15:42:23 **** Incremental Build of configuration Debug for project TrafficLights ****
+make all 
+make: Nothing to be done for `all'.
+15:44:43 **** Auto Build of configuration Debug for project TrafficLights ****
+make all 
+'Building file: ../src/interrupt_handler.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/interrupt_handler.o" -I../../TrafficLights_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/interrupt_handler.d" -MT"src/interrupt_handler.d" -o "src/interrupt_handler.o" "../src/interrupt_handler.c"
+'Finished building: ../src/interrupt_handler.c'
+' '
+'Building target: TrafficLights.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../TrafficLights_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -o "TrafficLights.elf"  ./src/gpio_init.o ./src/interrupt_handler.o ./src/main.o ./src/platform.o ./src/seg7_display.o ./src/xinterruptES3.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: TrafficLights.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size TrafficLights.elf  |tee "TrafficLights.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  17016	    704	   2552	  20272	   4f30	TrafficLights.elf
+'Finished building: TrafficLights.elf.size'
+' '
+15:44:46 **** Incremental Build of configuration Debug for project TrafficLights ****
+make all 
+make: Nothing to be done for `all'.
+15:46:50 **** Auto Build of configuration Debug for project TrafficLights ****
+make all 
+'Building file: ../src/interrupt_handler.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/interrupt_handler.o" -I../../TrafficLights_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/interrupt_handler.d" -MT"src/interrupt_handler.d" -o "src/interrupt_handler.o" "../src/interrupt_handler.c"
+'Finished building: ../src/interrupt_handler.c'
+' '
+'Building target: TrafficLights.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../TrafficLights_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -o "TrafficLights.elf"  ./src/gpio_init.o ./src/interrupt_handler.o ./src/main.o ./src/platform.o ./src/seg7_display.o ./src/xinterruptES3.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: TrafficLights.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size TrafficLights.elf  |tee "TrafficLights.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  17080	    704	   2552	  20336	   4f70	TrafficLights.elf
+'Finished building: TrafficLights.elf.size'
+' '
+15:46:54 **** Incremental Build of configuration Debug for project TrafficLights ****
+make all 
+make: Nothing to be done for `all'.
+15:48:04 **** Auto Build of configuration Debug for project TrafficLights ****
+make all 
+'Building file: ../src/interrupt_handler.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/interrupt_handler.o" -I../../TrafficLights_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/interrupt_handler.d" -MT"src/interrupt_handler.d" -o "src/interrupt_handler.o" "../src/interrupt_handler.c"
+'Finished building: ../src/interrupt_handler.c'
+' '
+'Building target: TrafficLights.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../TrafficLights_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -o "TrafficLights.elf"  ./src/gpio_init.o ./src/interrupt_handler.o ./src/main.o ./src/platform.o ./src/seg7_display.o ./src/xinterruptES3.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: TrafficLights.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size TrafficLights.elf  |tee "TrafficLights.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  17076	    704	   2556	  20336	   4f70	TrafficLights.elf
+'Finished building: TrafficLights.elf.size'
+' '
+15:48:07 **** Incremental Build of configuration Debug for project TrafficLights ****
+make all 
+make: Nothing to be done for `all'.
+15:51:06 **** Auto Build of configuration Debug for project TrafficLights ****
+make all 
+'Building file: ../src/interrupt_handler.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/interrupt_handler.o" -I../../TrafficLights_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/interrupt_handler.d" -MT"src/interrupt_handler.d" -o "src/interrupt_handler.o" "../src/interrupt_handler.c"
+'Finished building: ../src/interrupt_handler.c'
+' '
+'Building target: TrafficLights.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../TrafficLights_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -o "TrafficLights.elf"  ./src/gpio_init.o ./src/interrupt_handler.o ./src/main.o ./src/platform.o ./src/seg7_display.o ./src/xinterruptES3.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: TrafficLights.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size TrafficLights.elf  |tee "TrafficLights.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  17168	    704	   2552	  20424	   4fc8	TrafficLights.elf
+'Finished building: TrafficLights.elf.size'
+' '
+15:51:10 **** Incremental Build of configuration Debug for project TrafficLights ****
+make all 
+make: Nothing to be done for `all'.
+15:55:51 **** Auto Build of configuration Debug for project TrafficLights ****
+make all 
+'Building file: ../src/interrupt_handler.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/interrupt_handler.o" -I../../TrafficLights_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/interrupt_handler.d" -MT"src/interrupt_handler.d" -o "src/interrupt_handler.o" "../src/interrupt_handler.c"
+../src/interrupt_handler.c: In function 'blink':
+../src/interrupt_handler.c:99:20: warning: suggest parentheses around '&&' within '||' [-Wparentheses]
+  if (count >= 1250 && count < 1300 ||
+                    ^
+../src/interrupt_handler.c:101:17: warning: suggest parentheses around '&&' within '||' [-Wparentheses]
+   count >= 1450 && count < 1500 ||
+                 ^
+../src/interrupt_handler.c:102:17: warning: suggest parentheses around '&&' within '||' [-Wparentheses]
+   count >= 1550 && count < 1600 ||
+                 ^
+../src/interrupt_handler.c:103:17: warning: suggest parentheses around '&&' within '||' [-Wparentheses]
+   count >= 1650 && count < 1700
+                 ^
+'Finished building: ../src/interrupt_handler.c'
+' '
+'Building target: TrafficLights.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../TrafficLights_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -o "TrafficLights.elf"  ./src/gpio_init.o ./src/interrupt_handler.o ./src/main.o ./src/platform.o ./src/seg7_display.o ./src/xinterruptES3.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: TrafficLights.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size TrafficLights.elf  |tee "TrafficLights.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  17328	    704	   2552	  20584	   5068	TrafficLights.elf
+'Finished building: TrafficLights.elf.size'
+' '
+15:56:28 **** Auto Build of configuration Debug for project TrafficLights ****
+make all 
+'Building file: ../src/interrupt_handler.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/interrupt_handler.o" -I../../TrafficLights_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/interrupt_handler.d" -MT"src/interrupt_handler.d" -o "src/interrupt_handler.o" "../src/interrupt_handler.c"
+'Finished building: ../src/interrupt_handler.c'
+' '
+'Building target: TrafficLights.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../TrafficLights_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -o "TrafficLights.elf"  ./src/gpio_init.o ./src/interrupt_handler.o ./src/main.o ./src/platform.o ./src/seg7_display.o ./src/xinterruptES3.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: TrafficLights.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size TrafficLights.elf  |tee "TrafficLights.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  17328	    704	   2552	  20584	   5068	TrafficLights.elf
+'Finished building: TrafficLights.elf.size'
+' '
+15:56:36 **** Auto Build of configuration Debug for project TrafficLights ****
+make all 
+'Building file: ../src/interrupt_handler.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/interrupt_handler.o" -I../../TrafficLights_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/interrupt_handler.d" -MT"src/interrupt_handler.d" -o "src/interrupt_handler.o" "../src/interrupt_handler.c"
+'Finished building: ../src/interrupt_handler.c'
+' '
+'Building target: TrafficLights.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../TrafficLights_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -o "TrafficLights.elf"  ./src/gpio_init.o ./src/interrupt_handler.o ./src/main.o ./src/platform.o ./src/seg7_display.o ./src/xinterruptES3.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: TrafficLights.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size TrafficLights.elf  |tee "TrafficLights.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  17328	    704	   2552	  20584	   5068	TrafficLights.elf
+'Finished building: TrafficLights.elf.size'
+' '
+15:56:40 **** Incremental Build of configuration Debug for project TrafficLights ****
+make all 
+make: Nothing to be done for `all'.
+16:06:18 **** Auto Build of configuration Debug for project TrafficLights ****
+make all 
+'Building file: ../src/interrupt_handler.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/interrupt_handler.o" -I../../TrafficLights_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/interrupt_handler.d" -MT"src/interrupt_handler.d" -o "src/interrupt_handler.o" "../src/interrupt_handler.c"
+'Finished building: ../src/interrupt_handler.c'
+' '
+'Building target: TrafficLights.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../TrafficLights_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -o "TrafficLights.elf"  ./src/gpio_init.o ./src/interrupt_handler.o ./src/main.o ./src/platform.o ./src/seg7_display.o ./src/xinterruptES3.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: TrafficLights.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size TrafficLights.elf  |tee "TrafficLights.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  17400	    704	   2552	  20656	   50b0	TrafficLights.elf
+'Finished building: TrafficLights.elf.size'
+' '
+16:06:34 **** Incremental Build of configuration Debug for project TrafficLights ****
+make all 
+make: Nothing to be done for `all'.
+16:07:40 **** Auto Build of configuration Debug for project TrafficLights ****
+make all 
+'Building file: ../src/interrupt_handler.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/interrupt_handler.o" -I../../TrafficLights_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/interrupt_handler.d" -MT"src/interrupt_handler.d" -o "src/interrupt_handler.o" "../src/interrupt_handler.c"
+'Finished building: ../src/interrupt_handler.c'
+' '
+'Building target: TrafficLights.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../TrafficLights_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -o "TrafficLights.elf"  ./src/gpio_init.o ./src/interrupt_handler.o ./src/main.o ./src/platform.o ./src/seg7_display.o ./src/xinterruptES3.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: TrafficLights.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size TrafficLights.elf  |tee "TrafficLights.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  17400	    704	   2552	  20656	   50b0	TrafficLights.elf
+'Finished building: TrafficLights.elf.size'
+' '
+16:08:20 **** Auto Build of configuration Debug for project TrafficLights ****
+make all 
+'Building file: ../src/interrupt_handler.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/interrupt_handler.o" -I../../TrafficLights_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/interrupt_handler.d" -MT"src/interrupt_handler.d" -o "src/interrupt_handler.o" "../src/interrupt_handler.c"
+'Finished building: ../src/interrupt_handler.c'
+' '
+'Building target: TrafficLights.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../TrafficLights_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -o "TrafficLights.elf"  ./src/gpio_init.o ./src/interrupt_handler.o ./src/main.o ./src/platform.o ./src/seg7_display.o ./src/xinterruptES3.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: TrafficLights.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size TrafficLights.elf  |tee "TrafficLights.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  17236	    704	   2556	  20496	   5010	TrafficLights.elf
+'Finished building: TrafficLights.elf.size'
+' '
+16:08:28 **** Auto Build of configuration Debug for project TrafficLights ****
+make all 
+'Building file: ../src/interrupt_handler.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/interrupt_handler.o" -I../../TrafficLights_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/interrupt_handler.d" -MT"src/interrupt_handler.d" -o "src/interrupt_handler.o" "../src/interrupt_handler.c"
+'Finished building: ../src/interrupt_handler.c'
+' '
+'Building target: TrafficLights.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../TrafficLights_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -o "TrafficLights.elf"  ./src/gpio_init.o ./src/interrupt_handler.o ./src/main.o ./src/platform.o ./src/seg7_display.o ./src/xinterruptES3.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: TrafficLights.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size TrafficLights.elf  |tee "TrafficLights.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  17400	    704	   2552	  20656	   50b0	TrafficLights.elf
+'Finished building: TrafficLights.elf.size'
+' '
+16:08:40 **** Incremental Build of configuration Debug for project TrafficLights ****
+make all 
+make: Nothing to be done for `all'.
+16:09:44 **** Auto Build of configuration Debug for project TrafficLights ****
+make all 
+'Building file: ../src/interrupt_handler.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/interrupt_handler.o" -I../../TrafficLights_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/interrupt_handler.d" -MT"src/interrupt_handler.d" -o "src/interrupt_handler.o" "../src/interrupt_handler.c"
+'Finished building: ../src/interrupt_handler.c'
+' '
+'Building target: TrafficLights.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../TrafficLights_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -o "TrafficLights.elf"  ./src/gpio_init.o ./src/interrupt_handler.o ./src/main.o ./src/platform.o ./src/seg7_display.o ./src/xinterruptES3.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: TrafficLights.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size TrafficLights.elf  |tee "TrafficLights.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  17400	    704	   2552	  20656	   50b0	TrafficLights.elf
+'Finished building: TrafficLights.elf.size'
+' '
+16:09:51 **** Incremental Build of configuration Debug for project TrafficLights ****
+make all 
+make: Nothing to be done for `all'.
+16:13:41 **** Auto Build of configuration Debug for project TrafficLights ****
+make all 
+'Building file: ../src/interrupt_handler.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/interrupt_handler.o" -I../../TrafficLights_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/interrupt_handler.d" -MT"src/interrupt_handler.d" -o "src/interrupt_handler.o" "../src/interrupt_handler.c"
+'Finished building: ../src/interrupt_handler.c'
+' '
+'Building target: TrafficLights.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../TrafficLights_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -o "TrafficLights.elf"  ./src/gpio_init.o ./src/interrupt_handler.o ./src/main.o ./src/platform.o ./src/seg7_display.o ./src/xinterruptES3.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: TrafficLights.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size TrafficLights.elf  |tee "TrafficLights.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  17400	    704	   2552	  20656	   50b0	TrafficLights.elf
+'Finished building: TrafficLights.elf.size'
+' '
+16:15:31 **** Auto Build of configuration Debug for project TrafficLights ****
+make all 
+'Building file: ../src/interrupt_handler.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/interrupt_handler.o" -I../../TrafficLights_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/interrupt_handler.d" -MT"src/interrupt_handler.d" -o "src/interrupt_handler.o" "../src/interrupt_handler.c"
+'Finished building: ../src/interrupt_handler.c'
+' '
+'Building target: TrafficLights.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../TrafficLights_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -o "TrafficLights.elf"  ./src/gpio_init.o ./src/interrupt_handler.o ./src/main.o ./src/platform.o ./src/seg7_display.o ./src/xinterruptES3.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: TrafficLights.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size TrafficLights.elf  |tee "TrafficLights.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  17408	    704	   2552	  20664	   50b8	TrafficLights.elf
+'Finished building: TrafficLights.elf.size'
+' '
+16:15:38 **** Incremental Build of configuration Debug for project TrafficLights ****
+make all 
+make: Nothing to be done for `all'.
+16:17:32 **** Auto Build of configuration Debug for project TrafficLights ****
+make all 
+'Building file: ../src/interrupt_handler.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/interrupt_handler.o" -I../../TrafficLights_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/interrupt_handler.d" -MT"src/interrupt_handler.d" -o "src/interrupt_handler.o" "../src/interrupt_handler.c"
+'Finished building: ../src/interrupt_handler.c'
+' '
+'Building target: TrafficLights.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../TrafficLights_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -o "TrafficLights.elf"  ./src/gpio_init.o ./src/interrupt_handler.o ./src/main.o ./src/platform.o ./src/seg7_display.o ./src/xinterruptES3.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: TrafficLights.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size TrafficLights.elf  |tee "TrafficLights.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  17416	    704	   2552	  20672	   50c0	TrafficLights.elf
+'Finished building: TrafficLights.elf.size'
+' '
+16:17:48 **** Incremental Build of configuration Debug for project TrafficLights ****
+make all 
+make: Nothing to be done for `all'.
+16:24:53 **** Auto Build of configuration Debug for project TrafficLights ****
+make all 
+'Building file: ../src/interrupt_handler.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/interrupt_handler.o" -I../../TrafficLights_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/interrupt_handler.d" -MT"src/interrupt_handler.d" -o "src/interrupt_handler.o" "../src/interrupt_handler.c"
+'Finished building: ../src/interrupt_handler.c'
+' '
+'Building target: TrafficLights.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../TrafficLights_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -o "TrafficLights.elf"  ./src/gpio_init.o ./src/interrupt_handler.o ./src/main.o ./src/platform.o ./src/seg7_display.o ./src/xinterruptES3.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: TrafficLights.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size TrafficLights.elf  |tee "TrafficLights.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  17420	    704	   2556	  20680	   50c8	TrafficLights.elf
+'Finished building: TrafficLights.elf.size'
+' '
+16:24:57 **** Incremental Build of configuration Debug for project TrafficLights ****
+make all 
+make: Nothing to be done for `all'.

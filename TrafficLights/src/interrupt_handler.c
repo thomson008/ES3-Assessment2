@@ -28,10 +28,11 @@ extern u16 pd_button;
 volatile u16 disp_number = 2;
 
 int waiting = 0;
+int crossing = 0;
 int tr1_done = 0;
 int tr2_done = 1;
 
-int count = 0;
+u16 count = 0;
 
 void decodeColours()
 {
@@ -93,28 +94,82 @@ void decodeLeds()
 	else if (state_2 == 3) led_out = 0x8002;
 }
 
+void blink()
+{
+	if ((count >= 1250 && count < 1300) ||
+		(count >= 1350 && count < 1400) ||
+		(count >= 1450 && count < 1500) ||
+		(count >= 1550 && count < 1600) ||
+		(count >= 1650 && count < 1700)
+	) pd_colour = 0xFFF;
+}
+
+int enablePedestrian()
+{
+	waiting = !crossing;
+	led_out = led_out ^ waiting << 8;
+
+	if (state_1 == 0 && state_2 == 0)
+	{
+		count++;
+		disp_number = 2 - count / 250;
+
+		if (count >= 500 && count < 1750)
+		{
+			waiting = 0;
+			crossing = 1;
+			pd_colour = 0x0F0;
+			blink();
+			disp_number = 5 - (count - 500) / 250;
+		}
+
+
+		else if (count == 1750)
+		{
+			crossing = 0;
+			pd_colour = 0xF00;
+			count = 0;
+			disp_number = 2;
+		}
+
+		return 1;
+	}
+
+	return 0;
+}
+
+void updateStates()
+{
+	disp_number = 2;
+	if (tr2_done)
+	{
+		state_1 = (state_1 + 1) % 4;
+		tr1_done = state_1 == 0 ? 1 : 0;
+		tr2_done = !tr1_done;
+	}
+
+	else if (tr1_done)
+	{
+		state_2 = (state_2 + 1) % 4;
+		tr2_done = state_2 == 0 ? 1 : 0;
+		tr1_done = !tr2_done;
+	}
+
+	interruptCounter = 0;
+	decodeColours();
+	decodeLeds();
+}
+
 void hwTimerISR(void *CallbackRef)
 {
 	interruptServiced = FALSE;
 
 	displayDigit();
 
-	if (pd_button || waiting)
+	if (pd_button || waiting || crossing)
 	{
-		waiting = 1;
-
-		if (tr1_done)
+		if (enablePedestrian())
 		{
-			count++;
-
-			pd_colour = 0x0F0;
-			if (count == 1250)
-			{
-				waiting = 0;
-				pd_colour = 0xF00;
-				count = 0;
-			}
-
 			interruptServiced = TRUE;
 			return;
 		}
@@ -126,26 +181,7 @@ void hwTimerISR(void *CallbackRef)
 		disp_number = 1;
 
 	if (interruptCounter == 500)
-	{
-		disp_number = 2;
-		if (tr2_done)
-		{
-			state_1 = (state_1 + 1) % 4;
-			tr1_done = state_1 == 0 ? 1 : 0;
-			tr2_done = !tr1_done;
-		}
-
-		else if (tr1_done)
-		{
-			state_2 = (state_2 + 1) % 4;
-			tr2_done = state_2 == 0 ? 1 : 0;
-			tr1_done = !tr2_done;
-		}
-
-		interruptCounter = 0;
-		decodeColours();
-		decodeLeds();
-	}
+		updateStates();
 
 	interruptServiced = TRUE;
 }
