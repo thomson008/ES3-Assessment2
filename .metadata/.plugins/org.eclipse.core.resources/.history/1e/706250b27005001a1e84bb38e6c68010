@@ -1,0 +1,16 @@
+/*
+ * colours.h
+ *
+ *  Created on: 12 Nov 2019
+ *      Author: Tomek
+ */
+
+#ifndef COLOURS_H_
+#define COLOURS_H_
+
+#define RED 0xF00;
+#define YELLOW 0xFF0
+#define GREEN 0x0F0;
+#define WHITE 0xFFF;
+
+#endif /* COLOURS_H_ */

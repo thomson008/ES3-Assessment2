@@ -11,7 +11,7 @@ src/interrupt_handler.o src/interrupt_handler.d: \
  ../../TrafficLights_bsp/microblaze_0/include/mb_interface.h \
  ../../TrafficLights_bsp/microblaze_0/include/xil_exception.h \
  ../../TrafficLights_bsp/microblaze_0/include/xil_printf.h \
- ../src/gpio_init.h
+ ../src/gpio_init.h ../src/interrupt.h ../src/colours.h
 
 ../../TrafficLights_bsp/microblaze_0/include/xil_types.h:
 
@@ -36,3 +36,7 @@ src/interrupt_handler.o src/interrupt_handler.d: \
 ../../TrafficLights_bsp/microblaze_0/include/xil_printf.h:
 
 ../src/gpio_init.h:
+
+../src/interrupt.h:
+
+../src/colours.h:

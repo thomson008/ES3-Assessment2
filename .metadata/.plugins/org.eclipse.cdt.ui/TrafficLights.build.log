@@ -1,6 +1,6 @@
-16:24:57 **** Incremental Build of configuration Debug for project TrafficLights ****
+17:27:27 **** Incremental Build of configuration Debug for project TrafficLights ****
 make all 
 make: Nothing to be done for `all'.
 
-16:24:57 Build Finished (took 248ms)
+17:27:27 Build Finished (took 219ms)
 

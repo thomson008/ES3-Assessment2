@@ -159,3 +159,59 @@
 16:17:49 INFO  : Processor reset is completed for microblaze_0
 16:24:57 INFO  : microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
 16:24:59 INFO  : Processor reset is completed for microblaze_0
+16:31:39 ERROR : Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+15:07:30 INFO  : Launching XSDB server: xsdb.bat -s D:/Xilinx/SDK/2015.2/scripts/xsdb/xsdb/xsdb-server.tcl
+15:07:35 INFO  : XSDB server has started successfully.
+15:07:36 INFO  : Processing command line option -hwspec C:/Users/Tomek/Assessment_2_Traffic_Light/es3_hw_assmnt_2/es3_hw_assmnt_2.sdk/top.hdf.
+15:07:38 INFO  : Checking for hwspec changes in the project top_hw_platform_0.
+15:08:47 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:08:47 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183711307A" && level==0} -index 0' command is executed.
+15:08:50 INFO  : FPGA configured successfully with bitstream "C:/Users/Tomek/Assessment_2_Traffic_Light/es3_hw_assmnt_2/es3_hw_assmnt_2.sdk/top_hw_platform_0/download.bit"
+15:09:12 INFO  : Processor reset is completed for microblaze_0
+15:11:05 INFO  : microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+15:11:09 INFO  : Processor reset is completed for microblaze_0
+15:15:44 INFO  : microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+15:15:46 INFO  : Processor reset is completed for microblaze_0
+15:16:20 INFO  : microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+15:16:21 INFO  : Processor reset is completed for microblaze_0
+15:46:41 ERROR : Unexpected error while launching program.
+java.lang.RuntimeException: The program file specified in the launch configuration does not exist
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.runApplication(XilinxAppLaunchConfigurationDelegate.java:552)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.launch(XilinxAppLaunchConfigurationDelegate.java:296)
+	at com.xilinx.sdk.debug.ui.XilinxAppLaunchDelegateWrapper.launch(XilinxAppLaunchDelegateWrapper.java:31)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:858)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:707)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1018)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1222)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+15:55:59 ERROR : Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+15:56:30 INFO  : Launching XSDB server: xsdb.bat -s D:/Xilinx/SDK/2015.2/scripts/xsdb/xsdb/xsdb-server.tcl
+15:56:33 INFO  : Processing command line option -hwspec C:/Users/Tomek/Assessment_2_Traffic_Light/es3_hw_assmnt_2/es3_hw_assmnt_2.sdk/top.hdf.
+15:56:35 INFO  : Checking for hwspec changes in the project top_hw_platform_0.
+15:56:35 INFO  : XSDB server has started successfully.
+15:57:31 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:57:31 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183711307A" && level==0} -index 0' command is executed.
+15:57:32 INFO  : FPGA configured successfully with bitstream "C:/Users/Tomek/Assessment_2_Traffic_Light/es3_hw_assmnt_2/es3_hw_assmnt_2.sdk/top_hw_platform_0/download.bit"
+15:58:04 INFO  : Processor reset is completed for microblaze_0
+16:02:19 INFO  : microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+16:02:20 INFO  : Processor reset is completed for microblaze_0
+16:08:24 INFO  : microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+16:08:25 INFO  : Processor reset is completed for microblaze_0
+16:09:16 INFO  : microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+16:09:19 INFO  : Processor reset is completed for microblaze_0
+16:10:57 INFO  : microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+16:10:58 INFO  : Processor reset is completed for microblaze_0
+16:12:03 INFO  : microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+16:12:04 INFO  : Processor reset is completed for microblaze_0
+16:13:36 INFO  : microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+16:13:37 INFO  : Processor reset is completed for microblaze_0
+16:14:41 INFO  : microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+16:14:45 INFO  : Processor reset is completed for microblaze_0
+16:42:01 INFO  : microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+16:42:03 INFO  : Processor reset is completed for microblaze_0
+16:49:04 INFO  : microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+16:49:06 INFO  : Processor reset is completed for microblaze_0
+16:49:48 INFO  : microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+16:49:49 INFO  : Processor reset is completed for microblaze_0
+17:16:34 INFO  : microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+17:16:35 INFO  : Processor reset is completed for microblaze_0

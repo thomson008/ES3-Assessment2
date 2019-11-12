@@ -7,84 +7,82 @@
 #include "xil_types.h"
 #include "seg7_display.h"
 #include "gpio_init.h"
+#include "interrupt.h"
+#include "colours.h"
 
+// Variable that will hold the number of interrupts, in order to determine when a second has passed etc.
 u16 interruptCounter = 0;
-extern int interruptServiced;
-extern int state_1;
-extern int state_2;
 
-extern u16 colour_0;
-extern u16 colour_1;
-extern u16 colour_2;
+// Initial value of the number to be displayed on the 7-segment
+volatile u16 disp_number = 3;
 
-extern u16 colour_6;
-extern u16 colour_7;
-extern u16 colour_8;
+// Boolean flags
+int waiting = 0; // Is pedestrian waiting?
+int crossing = 0; // Is pedestrian crossing?
+int tr1_done = 0; // Has TR1 finished its sequence?
+int tr2_done = 1; // Has TR2 finished its sequence?
 
-extern u16 pd_colour;
-
-extern u16 led_out;
-extern u16 pd_button;
-volatile u16 disp_number = 2;
-
-int waiting = 0;
-int crossing = 0;
-int tr1_done = 0;
-int tr2_done = 1;
-
+// Time counter for when a pedestrian is going to cross
 u16 count = 0;
 
 void decodeColours()
 {
+	// Based on state of TR1, set the values of colour_{0,3}
 	switch (state_1)
 	{
+		// RED
 		case 0:
-			colour_0 = 0xF00;
-			colour_1 = 0xFFF;
-			colour_2 = 0xFFF;
+			colour_0 = RED;
+			colour_1 = WHITE;
+			colour_2 = WHITE;
 			break;
+		// RED + YELLOW
 		case 1:
-			colour_0 = 0xF00;
-			colour_1 = 0xFF0;
-			colour_2 = 0xFFF;
+			colour_0 = RED;
+			colour_1 = YELLOW;
+			colour_2 = WHITE;
 			break;
+		// GREEN
 		case 2:
-			colour_0 = 0xFFF;
-			colour_1 = 0xFFF;
-			colour_2 = 0x0F0;
+			colour_0 = WHITE;
+			colour_1 = WHITE;
+			colour_2 = GREEN;
 			break;
+		// YELLOW
 		case 3:
-			colour_0 = 0xFFF;
-			colour_1 = 0xFF0;
-			colour_2 = 0xFFF;
+			colour_0 = WHITE;
+			colour_1 = YELLOW;
+			colour_2 = WHITE;
 	}
 
+	// Based on state of TR2, set the values of colour_{6,8}
 	switch (state_2)
 	{
 		case 0:
-			colour_6 = 0xF00;
-			colour_7 = 0xFFF;
-			colour_8 = 0xFFF;
+			colour_6 = RED;
+			colour_7 = WHITE;
+			colour_8 = WHITE;
 			break;
 		case 1:
-			colour_6 = 0xF00;
-			colour_7 = 0xFF0;
-			colour_8 = 0xFFF;
+			colour_6 = RED;
+			colour_7 = YELLOW;
+			colour_8 = WHITE;
 			break;
 		case 2:
-			colour_6 = 0xFFF;
-			colour_7 = 0xFFF;
-			colour_8 = 0x0F0;
+			colour_6 = WHITE;
+			colour_7 = WHITE;
+			colour_8 = GREEN;
 			break;
 		case 3:
-			colour_6 = 0xFFF;
-			colour_7 = 0xFF0;
-			colour_8 = 0xFFF;
+			colour_6 = WHITE;
+			colour_7 = YELLOW;
+			colour_8 = WHITE;
 	}
 }
 
 void decodeLeds()
 {
+	// Produce the LED value by checking the states of both traffic lights
 	if (state_1 == 0 && state_2 == 0) led_out = 0x8004;
 	else if (state_1 == 1) led_out = 0xC004;
 	else if (state_1 == 2) led_out = 0x2004;
@@ -96,42 +94,54 @@ void decodeLeds()
 
 void blink()
 {
-	if ((count >= 1250 && count < 1300) ||
-		(count >= 1350 && count < 1400) ||
-		(count >= 1450 && count < 1500) ||
-		(count >= 1550 && count < 1600) ||
-		(count >= 1650 && count < 1700)
+	// If the counter is within one of the five ranges, change to colour to white
+	// This will give a blinking effect
+	if ((count >= 1500 && count < 1550) ||
+		(count >= 1600 && count < 1650) ||
+		(count >= 1700 && count < 1750) ||
+		(count >= 1800 && count < 1850) ||
+		(count >= 1900 && count < 1950)
 	) pd_colour = 0xFFF;
 }
 
 int enablePedestrian()
 {
+	// Check if the pedestrian is still waiting
 	waiting = !crossing;
+
+	// Light up the 8-th LED if he's waiting
 	led_out = led_out ^ waiting << 8;
 
+	// If both lights are red, allow him to cross (after 3 seconds)
 	if (state_1 == 0 && state_2 == 0)
 	{
+		// Increment the crossing time counter
 		count++;
-		disp_number = 2 - count / 250;
 
-		if (count >= 500 && count < 1750)
+		// Decrement the number showing when he'll be able to cross
+		disp_number = 3 - count / 250;
+
+		// After 3 seconds of both lights being red, turn PD light green
+		if (count >= 750 && count < 2000)
 		{
+			// Indicate that the PD is not waiting anymore
 			waiting = 0;
-			crossing = 1;
-			pd_colour = 0x0F0;
-			blink();
-			disp_number = 5 - (count - 500) / 250;
+			crossing = 1; // He is crossing now
+			pd_colour = 0x0F0; // Light is green
+			blink(); // Blink (if 2 seconds are left)
+			disp_number = 5 - (count - 750) / 250; // Decrement the time left for crossing
 		}
 
-
-		else if (count == 1750)
+		// If the PD crossing time is over
+		else if (count == 2000)
 		{
-			crossing = 0;
+			crossing = 0; // Not crossing anymore
 			pd_colour = 0xF00;
 			count = 0;
-			disp_number = 2;
+			disp_number = 3;
 		}
 
+		// Return one if pedestrian is allowed to cross now
 		return 1;
 	}
 
@@ -140,12 +150,12 @@ int enablePedestrian()
 
 void updateStates()
 {
-	disp_number = 2;
+	// Check if second light has finished its sequence
 	if (tr2_done)
 	{
-		state_1 = (state_1 + 1) % 4;
-		tr1_done = state_1 == 0 ? 1 : 0;
-		tr2_done = !tr1_done;
+		state_1 = (state_1 + 1) % 4; // Go to next state
+		tr1_done = state_1 == 0 ? 1 : 0; // Check if sequence is finished
+		tr2_done = !tr1_done; // If first light is finished, make light 2 start
 	}
 
 	else if (tr1_done)
@@ -156,6 +166,8 @@ void updateStates()
 	}
 
 	interruptCounter = 0;
+
+	// Set region colours and LED values appropriately for the current state
 	decodeColours();
 	decodeLeds();
 }
@@ -164,10 +176,13 @@ void hwTimerISR(void *CallbackRef)
 {
 	interruptServiced = FALSE;
 
+	// Display the current value of disp_number
 	displayDigit();
 
+	// Check if the pedestrian button has been pressed or the pedestrian is waiting or crossing
 	if (pd_button || waiting || crossing)
 	{
+		// If pedestrian is crossing, finish the interrupt handling
 		if (enablePedestrian())
 		{
 			interruptServiced = TRUE;
@@ -177,10 +192,11 @@ void hwTimerISR(void *CallbackRef)
 
 	interruptCounter++;
 
-	if (interruptCounter == 250)
-		disp_number = 1;
+	// Reduce the timer value
+	disp_number = 3 - (interruptCounter) / 250;
 
-	if (interruptCounter == 500)
+	// Update state of the lights after 3 seconds
+	if (interruptCounter == 750)
 		updateStates();
 
 	interruptServiced = TRUE;

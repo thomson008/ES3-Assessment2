@@ -9,7 +9,7 @@ src/main.o src/main.d: ../src/main.c ../src/platform.h \
  ../../TrafficLights_bsp/microblaze_0/include/mb_interface.h \
  ../../TrafficLights_bsp/microblaze_0/include/xil_exception.h \
  ../../TrafficLights_bsp/microblaze_0/include/xil_printf.h \
- ../src/seg7_display.h
+ ../src/seg7_display.h ../src/main.h ../src/colours.h
 
 ../src/platform.h:
 
@@ -36,3 +36,7 @@ src/main.o src/main.d: ../src/main.c ../src/platform.h \
 ../../TrafficLights_bsp/microblaze_0/include/xil_printf.h:
 
 ../src/seg7_display.h:
+
+../src/main.h:
+
+../src/colours.h:

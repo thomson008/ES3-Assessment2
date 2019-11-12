@@ -49,28 +49,8 @@
 #include "platform.h"
 #include "gpio_init.h"
 #include "seg7_display.h"
+#include "main.h"
 
-// Colours of first traffic light
-volatile u16 colour_0 = 0xF00;
-volatile u16 colour_1 = 0xFFF;
-volatile u16 colour_2 = 0xFFF;
-
-// Colours of second traffic lights
-volatile u16 colour_6 = 0xF00;
-volatile u16 colour_7 = 0xFFF;
-volatile u16 colour_8 = 0xFFF;
-
-// Colour of pedestrian light
-volatile u16 pd_colour = 0xF00;
-
-volatile u16 led_out = 0x8004;
-
-// Value of pedestrian button
-volatile u16 pd_button;
-
-// States of two traffic lights
-volatile int state_1 = 0;
-volatile int state_2 = 0;
 
 // Number to be displayed on the screen
 extern u16 disp_number;
@@ -83,29 +63,34 @@ void print(char *str);
 XStatus initGpio();
 XStatus setUpInterruptSystem();
 
-
-
-
+// Method to keep writing and reading values to all the devices
 void controlXGpios()
 {
 	while (1)
 	{
+		// Write colours to the first traffic light
 		XGpio_DiscreteWrite(&REGION_0_COLOUR, 1, colour_0);
 		XGpio_DiscreteWrite(&REGION_1_COLOUR, 1, colour_1);
 		XGpio_DiscreteWrite(&REGION_2_COLOUR, 1, colour_2);
 
+		// Write colours to the second traffic light
 		XGpio_DiscreteWrite(&REGION_6_COLOUR, 1, colour_6);
 		XGpio_DiscreteWrite(&REGION_7_COLOUR, 1, colour_7);
 		XGpio_DiscreteWrite(&REGION_8_COLOUR, 1, colour_8);
 
+		// Write colour to the pedestrian light
 		XGpio_DiscreteWrite(&REGION_4_COLOUR, 1, pd_colour);
 
+		// Write value to LEDs
 		XGpio_DiscreteWrite(&LEDs, 1, led_out);
 
+		// Read the value from the pedestrian button
 		pd_button = XGpio_DiscreteRead(&PD_BTN, 1);
 
+		// Display some number (may be time left for a traffic light or time left for pedestrian)
 		displayNumber(disp_number);
 
+		// Wait for the interrupt to be serviced
 		while (!interruptServiced);
 	}
 }
@@ -114,8 +99,8 @@ int main()
 {
 	init_platform();
 
+	// Initialize all the Gpios and check if everything worked correctly
 	XStatus status = initGpio();
-
 	if (status != XST_SUCCESS)
 	{
 		print("GPIOs initialisation failed!!!\n\r");
@@ -125,8 +110,8 @@ int main()
 
 	print("GPIOs successfully initialised.\n\r");
 
+	// Set up the interrupt system and perform a similar check as before
 	status = setUpInterruptSystem();
-
 	if (status != XST_SUCCESS)
 	{
 		print("Something wrong with interrupt!\n\r");
@@ -134,8 +119,9 @@ int main()
 		return 0;
 	}
 
-	print("Interrupt set.\n\r");
+	print("Interrupt successfully set.\n\r");
 
+	// Call the function that will keep reading and writing Gpios values forever
 	controlXGpios();
 
 	cleanup_platform();
