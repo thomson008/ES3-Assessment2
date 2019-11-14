@@ -21,13 +21,10 @@ int waiting = 0; // Is pedestrian waiting?
 int crossing = 0; // Is pedestrian crossing?
 int tr1_done = 0; // Has TR1 finished its sequence?
 int tr2_done = 1; // Has TR2 finished its sequence?
-
-int mult = 1;
+int just_crossed = 0; // Was a pedestrian just allowed to cross?
 
 // Time counter for when a pedestrian is going to cross
 u16 count = 0;
-
-int bigger = 0;
 
 void decodeColours()
 {
@@ -117,23 +114,23 @@ int enablePedestrian()
 	led_out = led_out ^ waiting << 8;
 
 	// If both lights are red, allow him to cross (after 3 seconds)
-	if (state_1 == 0 && state_2 == 0)
+	if (state_1 == 0 && state_2 == 0 && !just_crossed && tr2_done)
 	{
 		// Increment the crossing time counter
 		count++;
 
 		// Decrement the number showing when he'll be able to cross
-		disp_number = 3 - count / 250;
+		disp_number = 2 - count / 250;
 
 		// After 3 seconds of both lights being red, turn PD light green
-		if (count >= 750 && count < 2000)
+		if (count >= 500 && count < 1750)
 		{
 			// Indicate that the PD is not waiting anymore
 			waiting = 0;
 			crossing = 1; // He is crossing now
 			pd_colour = 0x0F0; // Light is green
 			blink(); // Blink (if 2 seconds are left)
-			disp_number = 5 - (count - 750) / 250; // Decrement the time left for crossing
+			disp_number = 5 - (count - 500) / 250; // Decrement the time left for crossing
 		}
 
 		// If the PD crossing time is over
@@ -142,7 +139,8 @@ int enablePedestrian()
 			crossing = 0; // Not crossing anymore
 			pd_colour = 0xF00;
 			count = 0;
-			disp_number = 3;
+			disp_number = 2;
+			just_crossed = 1; // Just crossed, so the next pedestrian will only be allowed after next cycle
 		}
 
 		// Return 1 if pedestrian is allowed to cross now
@@ -157,52 +155,22 @@ void updateStates()
 	// Check if second light has finished its sequence
 	if (tr2_done)
 	{
-		if (state_1 == 2 && mult > 1)
-		{
-			if (interruptCounter == 750 * mult)
-			{
-				state_1 = 3;
-				interruptCounter = 0;
-			}
-		}
-
-		else
-		{
-			if (interruptCounter == 750)
-			{
-				state_1 = (state_1 + 1) % 4; // Go to next state
-				interruptCounter = 0;
-				tr1_done = state_1 == 0 ? 1 : 0; // Check if sequence is finished
-				tr2_done = !tr1_done; // If first light is finished, make light 2 start
-			}
-		}
-
-
+		state_1 = (state_1 + 1) % 4; // Go to next state
+		tr1_done = state_1 == 0 ? 1 : 0; // Check if sequence is finished
+		tr2_done = !tr1_done; // If first light is finished, make light 2 start
 	}
 
 	else if (tr1_done)
 	{
-		if (state_2 == 2 && mult < 1)
-		{
-			if (interruptCounter == (int) (750 / mult))
-			{
-				state_2 = 3;
-				interruptCounter = 0;
-			}
-		}
-
-		else
-		{
-			if (interruptCounter == 750)
-			{
-				state_2 = (state_2 + 1) % 4;
-				interruptCounter = 0;
-				tr2_done = state_2 == 0 ? 1 : 0;
-				tr1_done = !tr2_done;
-			}
-		}
+		state_2 = (state_2 + 1) % 4;
+		tr2_done = state_2 == 0 ? 1 : 0;
+		tr1_done = !tr2_done;
 	}
 
+	// The pedestrian wasn't just allowed to cross
+	just_crossed = 0;
+
+	interruptCounter = 0;
 
 	// Set region colours and LED values appropriately for the current state
 	decodeColours();
@@ -229,18 +197,12 @@ void hwTimerISR(void *CallbackRef)
 
 	interruptCounter++;
 
-	if (traffic_1 > traffic_2)
-	{
-		mult = traffic_1 / traffic_2;
-		bigger = 1;
-	}
-	mult = (double) traffic_1 / (double) traffic_2;
 	// Reduce the timer value
-	disp_number = 3 * mult - (interruptCounter) / 250;
+	disp_number = 2 - (interruptCounter) / 250;
 
 	// Update state of the lights after 3 seconds
-
-	updateStates();
+	if (interruptCounter == 500)
+		updateStates();
 
 	interruptServiced = TRUE;
 }

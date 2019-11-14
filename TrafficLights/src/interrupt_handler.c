@@ -14,7 +14,7 @@
 u16 interruptCounter = 0;
 
 // Initial value of the number to be displayed on the 7-segment
-volatile u16 disp_number = 3;
+volatile u16 disp_number = 2;
 
 // Boolean flags
 int waiting = 0; // Is pedestrian waiting?
@@ -97,11 +97,11 @@ void blink()
 {
 	// If the counter is within one of the five ranges, change to colour to white
 	// This will give a blinking effect
-	if ((count >= 1500 && count < 1550) ||
-		(count >= 1600 && count < 1650) ||
-		(count >= 1700 && count < 1750) ||
-		(count >= 1800 && count < 1850) ||
-		(count >= 1900 && count < 1950)
+	if ((count >= 750 && count < 800) ||
+		(count >= 850 && count < 900) ||
+		(count >= 950 && count < 1000) ||
+		(count >= 1050 && count < 1100) ||
+		(count >= 1150 && count < 1200)
 	) pd_colour = 0xFFF;
 }
 
@@ -113,34 +113,35 @@ int enablePedestrian()
 	// Light up the 8-th LED if he's waiting
 	led_out = led_out ^ waiting << 8;
 
-	// If both lights are red, allow him to cross (after 3 seconds)
-	if (state_1 == 0 && state_2 == 0 && !just_crossed)
+	// If both lights are red, allow him to cross (after 2 seconds)
+	if (state_1 == 0 && state_2 == 0 && !just_crossed && tr2_done && interruptCounter == 499)
 	{
 		// Increment the crossing time counter
 		count++;
 
 		// Decrement the number showing when he'll be able to cross
-		disp_number = 3 - count / 250;
+		disp_number = 2 - count / 250;
 
 		// After 3 seconds of both lights being red, turn PD light green
-		if (count >= 750 && count < 2000)
+		if (count < 1250)
 		{
 			// Indicate that the PD is not waiting anymore
 			waiting = 0;
 			crossing = 1; // He is crossing now
 			pd_colour = 0x0F0; // Light is green
 			blink(); // Blink (if 2 seconds are left)
-			disp_number = 5 - (count - 750) / 250; // Decrement the time left for crossing
+			disp_number = 5 - (count) / 250; // Decrement the time left for crossing
 		}
 
 		// If the PD crossing time is over
-		else if (count == 2000)
+		else if (count == 1250)
 		{
 			crossing = 0; // Not crossing anymore
 			pd_colour = 0xF00;
 			count = 0;
-			disp_number = 3;
+			disp_number = 2;
 			just_crossed = 1; // Just crossed, so the next pedestrian will only be allowed after next cycle
+			interruptCounter = 0;
 		}
 
 		// Return 1 if pedestrian is allowed to cross now
@@ -198,10 +199,10 @@ void hwTimerISR(void *CallbackRef)
 	interruptCounter++;
 
 	// Reduce the timer value
-	disp_number = 3 - (interruptCounter) / 250;
+	disp_number = 2 - (interruptCounter) / 250;
 
-	// Update state of the lights after 3 seconds
-	if (interruptCounter == 750)
+	// Update state of the lights after 2 seconds
+	if (interruptCounter == 500)
 		updateStates();
 
 	interruptServiced = TRUE;

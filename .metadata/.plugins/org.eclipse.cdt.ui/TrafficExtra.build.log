@@ -1,6 +1,6 @@
-12:46:42 **** Incremental Build of configuration Debug for project TrafficExtra ****
+17:06:39 **** Incremental Build of configuration Debug for project TrafficExtra ****
 make all 
 make: Nothing to be done for `all'.
 
-12:46:42 Build Finished (took 232ms)
+17:06:40 Build Finished (took 233ms)
 
