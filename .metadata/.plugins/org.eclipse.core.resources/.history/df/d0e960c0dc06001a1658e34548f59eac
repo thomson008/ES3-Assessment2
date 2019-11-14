@@ -214,7 +214,6 @@ void updateStates()
 	{
 		decodeColours();
 		decodeLeds();
-		just_crossed = 0;
 	}
 }
 

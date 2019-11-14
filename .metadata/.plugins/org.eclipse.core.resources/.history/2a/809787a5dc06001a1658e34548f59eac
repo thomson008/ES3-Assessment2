@@ -21,7 +21,6 @@ int waiting = 0; // Is pedestrian waiting?
 int crossing = 0; // Is pedestrian crossing?
 int tr1_done = 0; // Has TR1 finished its sequence?
 int tr2_done = 1; // Has TR2 finished its sequence?
-int just_crossed = 0; // Was a pedestrian just allowed to cross?
 
 int mult = 1;
 
@@ -118,7 +117,7 @@ int enablePedestrian()
 	led_out = led_out ^ waiting << 8;
 
 	// If both lights are red, allow him to cross (after 3 seconds)
-	if (state_1 == 0 && state_2 == 0 && !just_crossed)
+	if (state_1 == 0 && state_2 == 0)
 	{
 		// Increment the crossing time counter
 		count++;
@@ -144,7 +143,6 @@ int enablePedestrian()
 			pd_colour = 0xF00;
 			count = 0;
 			disp_number = 3;
-			just_crossed = 1;
 		}
 
 		// Return 1 if pedestrian is allowed to cross now
@@ -214,7 +212,6 @@ void updateStates()
 	{
 		decodeColours();
 		decodeLeds();
-		just_crossed = 0;
 	}
 }
 

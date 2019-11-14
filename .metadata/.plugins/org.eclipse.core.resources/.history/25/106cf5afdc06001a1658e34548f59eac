@@ -144,7 +144,6 @@ int enablePedestrian()
 			pd_colour = 0xF00;
 			count = 0;
 			disp_number = 3;
-			just_crossed = 1;
 		}
 
 		// Return 1 if pedestrian is allowed to cross now
@@ -214,7 +213,6 @@ void updateStates()
 	{
 		decodeColours();
 		decodeLeds();
-		just_crossed = 0;
 	}
 }
 
