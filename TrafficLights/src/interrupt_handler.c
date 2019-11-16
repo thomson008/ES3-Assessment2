@@ -122,7 +122,7 @@ int enablePedestrian()
 		// Decrement the number showing when he'll be able to cross
 		disp_number = 2 - count / 250;
 
-		// After 3 seconds of both lights being red, turn PD light green
+		// Turn PD light green
 		if (count < 1250)
 		{
 			// Indicate that the PD is not waiting anymore
