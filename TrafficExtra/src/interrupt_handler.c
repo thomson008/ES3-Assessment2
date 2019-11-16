@@ -247,6 +247,8 @@ void getMultiplier()
 		mult = traffic_2 / traffic_1;
 		bigger = 2;
 	}
+
+	if (mult > 10) mult = 10;
 }
 
 void hwTimerISR(void *CallbackRef)
