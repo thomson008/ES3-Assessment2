@@ -17,10 +17,10 @@ u16 interruptCounter = 0;
 volatile u16 disp_number = 2;
 
 // Boolean flags
-int waiting = 0; // Is pedestrian waiting?
-int crossing = 0; // Is pedestrian crossing?
-int tr1_done = 0; // Has TR1 finished its sequence?
-int tr2_done = 1; // Has TR2 finished its sequence?
+int waiting = 0;	  // Is pedestrian waiting?
+int crossing = 0;	 // Is pedestrian crossing?
+int tr1_done = 0;	 // Has TR1 finished its sequence?
+int tr2_done = 1;	 // Has TR2 finished its sequence?
 int just_crossed = 0; // Was a pedestrian just allowed to cross?
 
 int mult = 1;
@@ -35,66 +35,73 @@ void decodeColours()
 	// Based on state of TR1, set the values of colour_{0,3}
 	switch (state_1)
 	{
-		// RED
-		case 0:
-			colour_0 = RED;
-			colour_1 = WHITE;
-			colour_2 = WHITE;
-			break;
-		// RED + YELLOW
-		case 1:
-			colour_0 = RED;
-			colour_1 = YELLOW;
-			colour_2 = WHITE;
-			break;
-		// GREEN
-		case 2:
-			colour_0 = WHITE;
-			colour_1 = WHITE;
-			colour_2 = GREEN;
-			break;
-		// YELLOW
-		case 3:
-			colour_0 = WHITE;
-			colour_1 = YELLOW;
-			colour_2 = WHITE;
+	// RED
+	case 0:
+		colour_0 = RED;
+		colour_1 = WHITE;
+		colour_2 = WHITE;
+		break;
+	// RED + YELLOW
+	case 1:
+		colour_0 = RED;
+		colour_1 = YELLOW;
+		colour_2 = WHITE;
+		break;
+	// GREEN
+	case 2:
+		colour_0 = WHITE;
+		colour_1 = WHITE;
+		colour_2 = GREEN;
+		break;
+	// YELLOW
+	case 3:
+		colour_0 = WHITE;
+		colour_1 = YELLOW;
+		colour_2 = WHITE;
 	}
 
 	// Based on state of TR2, set the values of colour_{6,8}
 	switch (state_2)
 	{
-		case 0:
-			colour_6 = RED;
-			colour_7 = WHITE;
-			colour_8 = WHITE;
-			break;
-		case 1:
-			colour_6 = RED;
-			colour_7 = YELLOW;
-			colour_8 = WHITE;
-			break;
-		case 2:
-			colour_6 = WHITE;
-			colour_7 = WHITE;
-			colour_8 = GREEN;
-			break;
-		case 3:
-			colour_6 = WHITE;
-			colour_7 = YELLOW;
-			colour_8 = WHITE;
+	case 0:
+		colour_6 = RED;
+		colour_7 = WHITE;
+		colour_8 = WHITE;
+		break;
+	case 1:
+		colour_6 = RED;
+		colour_7 = YELLOW;
+		colour_8 = WHITE;
+		break;
+	case 2:
+		colour_6 = WHITE;
+		colour_7 = WHITE;
+		colour_8 = GREEN;
+		break;
+	case 3:
+		colour_6 = WHITE;
+		colour_7 = YELLOW;
+		colour_8 = WHITE;
 	}
 }
 
 void decodeLeds()
 {
 	// Produce the LED value by checking the states of both traffic lights
-	if (state_1 == 0 && state_2 == 0) led_out = 0x8004;
-	else if (state_1 == 1) led_out = 0xC004;
-	else if (state_1 == 2) led_out = 0x2004;
-	else if (state_1 == 3) led_out = 0x4004;
-	else if (state_2 == 1) led_out = 0x8006;
-	else if (state_2 == 2) led_out = 0x8001;
-	else if (state_2 == 3) led_out = 0x8002;
+	if (state_1 == 0 && state_2 == 0)
+		led_out = 0x8004;
+	else if (state_1 == 1)
+		led_out = 0xC004;
+	else if (state_1 == 2)
+		led_out = 0x2004;
+	else if (state_1 == 3)
+		led_out = 0x4004;
+	else if (state_2 == 1)
+		led_out = 0x8006;
+	else if (state_2 == 2)
+		led_out = 0x8001;
+	else if (state_2 == 3)
+		led_out = 0x8002;
 }
 
 void blink()
@@ -105,8 +112,8 @@ void blink()
 		(count >= 850 && count < 900) ||
 		(count >= 950 && count < 1000) ||
 		(count >= 1050 && count < 1100) ||
-		(count >= 1150 && count < 1200)
-	) pd_colour = 0xFFF;
+		(count >= 1150 && count < 1200))
+		pd_colour = 0xFFF;
 }
 
 int enablePedestrian()
@@ -126,14 +133,14 @@ int enablePedestrian()
 		// Decrement the number showing when he'll be able to cross
 		disp_number = 2 - count / 250;
 
-		// After 3 seconds of both lights being red, turn PD light green
+		// Turn PD light green
 		if (count < 1250)
 		{
 			// Indicate that the PD is not waiting anymore
 			waiting = 0;
-			crossing = 1; // He is crossing now
-			pd_colour = 0x0F0; // Light is green
-			blink(); // Blink (if 2 seconds are left)
+			crossing = 1;					 // He is crossing now
+			pd_colour = 0x0F0;				 // Light is green
+			blink();						 // Blink (if 2 seconds are left)
 			disp_number = 5 - (count) / 250; // Decrement the time left for crossing
 		}
 
@@ -175,7 +182,7 @@ void updateTR1()
 			state_1 = (state_1 + 1) % 4; // Go to next state
 			interruptCounter = 0;
 			tr1_done = state_1 == 0 ? 1 : 0; // Check if sequence is finished
-			tr2_done = !tr1_done; // If first light is finished, make light 2 start
+			tr2_done = !tr1_done;			 // If first light is finished, make light 2 start
 		}
 	}
 }
@@ -207,8 +214,10 @@ void updateTR2()
 void updateStates()
 {
 	// Update the lights if one of them has finished its sequence
-	if (tr2_done) updateTR1();
-	else if (tr1_done) updateTR2();
+	if (tr2_done)
+		updateTR1();
+	else if (tr1_done)
+		updateTR2();
 
 	// Decode the new colours and LEDs if the counter has been reset
 	if (!interruptCounter)
@@ -248,7 +257,8 @@ void getMultiplier()
 		bigger = 2;
 	}
 
-	if (mult > 10) mult = 10;
+	if (mult > 10)
+		mult = 10;
 }
 
 void hwTimerISR(void *CallbackRef)
@@ -273,8 +283,7 @@ void hwTimerISR(void *CallbackRef)
 	getMultiplier();
 
 	// Reduce the timer value
-	disp_number = (state_1 == 2 && bigger == 1) || (state_2 == 2 && bigger == 2) ?
-			2 * mult - (interruptCounter) / 250 : 2 - (interruptCounter) / 250;
+	disp_number = (state_1 == 2 && bigger == 1) || (state_2 == 2 && bigger == 2) ? 2 * mult - (interruptCounter) / 250 : 2 - (interruptCounter) / 250;
 
 	// Update state of the lights after 3 seconds
 	// (this function will only do something after at least 2 seconds have passed)
